@@ -1,7 +1,7 @@
 import { defineConfig } from 'vitepress'
 import mdFootnote from "markdown-it-footnote";
 
-const hostURL = 'https://certseeds.github.io/awesome-exams-page'
+const hostURL = 'https://certseeds.github.io/awesome-exams-page/'
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
@@ -12,6 +12,7 @@ export default defineConfig({
         "LICENSE_AGPL_V3_0.md",
         "LICENSE_CC_BY_NC_SA_V4_0.md"
     ],
+    base: hostURL,
     themeConfig: {
         // https://vitepress.dev/reference/default-theme-config
         nav: [
