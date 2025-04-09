@@ -1,0 +1,22 @@
+# EditorConfig is awesome: https://EditorConfig.org
+
+# top-most EditorConfig file
+root = true
+
+[*]
+charset = utf-8
+indent_size = 4
+indent_style = space
+
+# Unix-style newlines with a newline ending every file
+[*.{md, sh}]
+end_of_line = lf
+insert_final_newline = true
+trim_trailing_whitespace = true
+
+[*.{go, js, rs, toml, yml}]
+end_of_line = lf
+trim_trailing_whitespace = true
+
+[makefile]
+indent_style = tab
