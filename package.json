@@ -1,0 +1,30 @@
+{
+    "name": "awesome-exams-page",
+    "version": "0.0.1",
+    "description": "awesome sustech exams page",
+    "type": "module",
+    "private": true,
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "docs:dev": "vitepress dev",
+        "docs:build": "vitepress build",
+        "docs:preview": "vitepress preview"
+    },
+    "keywords": [
+        "sustech",
+        "md",
+        "latex",
+        "vitepress",
+        "awesome"
+    ],
+    "author": "Certseeds",
+    "license": "CC-BY-NC-SA-4.0 And AGPL-v3.0-or-later",
+    "dependencies": {
+        "vue": "^3.5.13"
+    },
+    "devDependencies": {
+        "markdown-it-footnote": "^4.0.0",
+        "markdown-it-mathjax3": "^4.3.2",
+        "vitepress": "1.6.3"
+    }
+}

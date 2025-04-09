@@ -493,3 +493,6 @@ $RECYCLE.BIN/
 *.lnk
 
 # End of https://www.toptal.com/developers/gitignore/api/python,jupyternotebooks,node,windows,macos,linux,video,audio,images
+
+.vitepress/dist
+.vitepress/cache
