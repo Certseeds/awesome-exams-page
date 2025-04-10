@@ -9,7 +9,6 @@ export default defineConfig({
     title: "awesome-exams-page",
     description: "awesome sustech exams pages",
     srcExclude: [
-        "README.md",
         "LICENSE_AGPL_V3_0.md",
         "LICENSE_CC_BY_NC_SA_V4_0.md"
     ],
