@@ -16,7 +16,8 @@ export default defineConfig({
     themeConfig: {
         // https://vitepress.dev/reference/default-theme-config
         nav: [
-            { text: 'Home', link: '/' }
+            { text: 'Home', link: '/' },
+            { text: '编辑器', link: '/editor' },
         ],
         sidebar: [
             {
@@ -79,5 +80,15 @@ export default defineConfig({
         hostname: hostURL
     },
     lastUpdated: true,
-    metaChunk: true
+    metaChunk: true,
+    vite: {
+        ssr: {
+            // 避免在SSR期间尝试导入Vditor
+            noExternal: ['vditor']
+        },
+        // 避免CSS代码分割，确保Vditor样式可用
+        build: {
+            cssCodeSplit: false
+        }
+    }
 })

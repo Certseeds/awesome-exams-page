@@ -20,11 +20,12 @@
     "author": "Certseeds",
     "license": "CC-BY-NC-SA-4.0 And AGPL-v3.0-or-later",
     "dependencies": {
-        "vue": "^3.5.13"
+        "vditor": "^3.11.0",
+        "vue": "^3.5.13",
+        "markdown-it-mathjax3": "^4.3.2"
     },
     "devDependencies": {
         "markdown-it-footnote": "^4.0.0",
-        "markdown-it-mathjax3": "^4.3.2",
         "vitepress": "1.6.3"
     },
     "pnpm": {
