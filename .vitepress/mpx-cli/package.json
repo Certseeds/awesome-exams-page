@@ -1,0 +1,13 @@
+{
+  "name": "mpx-cli-private",
+  "version": "1.0.0",
+  "description": "just a subfolder to store mpx-cli",
+  "type": "module",
+  "private": true,
+  "keywords": [],
+  "author": "",
+  "license": "AGPL-v3.0-or-later",
+  "devDependencies": {
+    "@mathpix/mpx-cli": "^0.4.0"
+  }
+}
