@@ -8,7 +8,8 @@ const args = process.argv;
 
 const readArgs = function (args) {
     const result = {
-        path: args[2]
+        path: args[2],
+        prefix: args[3]
     }
     return result;
 }
@@ -93,7 +94,7 @@ async function createRenameMapping(dirPath) {
         console.log(newName);
         // 处理冲突：若存在同名文件，则添加 -1, -2 后缀
         let finalName = newName;
-        let count = 1;
+        let count = 2;
         while (usedNames[finalName]) {
             const ext = path.extname(newName); // 应为 .md
             const nameWithoutExt = newName.slice(0, -ext.length);
@@ -109,10 +110,14 @@ async function createRenameMapping(dirPath) {
 async function main() {
     const targetDir = input["path"];
     const { mapping, abandon } = await createRenameMapping(targetDir);
-    console.log("文件名映射：");
-    console.log(JSON.stringify(mapping, null, 2));
     console.log("\n无法转换的文件：");
     console.log(JSON.stringify(abandon, null, 2));
+    for (const [oldName, newName] of Object.entries(mapping)) {
+        const oldPath = path.join(targetDir, oldName);
+        const newPath = path.join(targetDir, `${input["prefix"]}-${newName}`);
+        console.log(`重命名 ${oldName} -> ${newName}`);
+        await fs.renameSync(oldPath, newPath);
+    }
 }
 
 main().catch(console.error);

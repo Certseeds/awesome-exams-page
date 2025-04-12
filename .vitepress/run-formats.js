@@ -17,9 +17,13 @@ const input = readArgs(args);
 
 const usingDollars = function (content) {
     // replace "(/" and "/)" with "$"
-    let result = content.replace(/\(\//g, '$').replace(/\/\)/g, '$');
-    // replace "[/" and "/]" with "$$"
-    result = result.replace(/\[\//g, '$$').replace(/\/\]/g, '$$');
+    let result = content
+    .replace(/\\\(/g, '$$')
+    .replace(/\\\)/g, '$$')
+    .replace(/\\\[/g, '$$$$')
+    .replace(/\\\]/g, '$$$$');
+    
+    console.log('替换后的内容:', result); // 添加日志
     return result;
 }
 
@@ -58,8 +62,8 @@ const getEmptyLines = function (content) {
 const removeTooMuchEmptyLine = function(content) {
     return content.replace(/\n{3,}/g, '\n\n');
 }
-const level0 = async function () {
-    const filePath = path.resolve(input["path"]);
+const level0 = async function (inputPath) {
+    const filePath = path.resolve(inputPath);
     const content = await fs.readFileSync(filePath, 'utf8');
     const result = usingDollars(content);
     const pure = getEmptyLines(result);
@@ -68,7 +72,11 @@ const level0 = async function () {
 }
 
 async function main() {
-    await level0();
+    await level0(input["path"]);
 }
 
 main().catch(err => console.error(err));
+
+export {
+    level0
+}
