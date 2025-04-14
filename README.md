@@ -19,6 +19,6 @@ fork of awesome-exames, 同样使用CC BY-NC-SA 4.0协议.
 
 ## 科目
 
-+ [MA103_线性代数](/MA103_线性代数/README)
-+ [MA111_高等代数II](/MA111_高等代数II/README)
-+ [MA127_高等数学下](/MA127_高等数学下/README)
++ [MA103_线性代数](/MA103_线性代数/README.md)
++ [MA111_高等代数II](/MA111_高等代数II/README.md)
++ [MA127_高等数学下](/MA127_高等数学下/README.md)
