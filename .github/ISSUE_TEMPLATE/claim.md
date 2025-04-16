@@ -1,6 +1,6 @@
 ---
 name: 认领一些工作
-about: 发现了一处Bug或问题
+about: 希望做些什么志愿工作?
 title: "[Bug]: <title>"
 labels: claim
 assignees: 'Certseeds'
