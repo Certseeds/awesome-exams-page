@@ -102,7 +102,7 @@ $ pnpm --version
 
 如果您有改进建议，请复刻(fork)仓库并创建拉取请求(pull request)。您也可以简单地在Discussions的Ideas部分开启一个讨论
 
-别忘了给项目点星标!再次感谢!
+别忘了给项目点星标! 再次感谢!
 
 1. [报告错误](https://github.com/Certseeds/awesome-exams-page/issues/new?template=bug_report.md)对项目的贡献非常重要, 这可以帮助后来人免受困扰.
 
