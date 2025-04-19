@@ -42,7 +42,7 @@ const handleSave = (content) => {
 
 使用 Vditor 可视化 Markdown 编辑器，支持实时预览和各种扩展功能, 主要是为了能让用户不需要下载库, 执行pnpm build就可以编辑文档, 比对效果.
 
-PS: 编辑器需要一小段时间加载.
+PS: 编辑器需要一小段时间加载`https://unpkg.com/`上的资源
 
 <VditorEditor
   v-model:value="markdownContent"
