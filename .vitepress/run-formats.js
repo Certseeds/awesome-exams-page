@@ -14,7 +14,6 @@ const readArgs = function (args) {
 }
 const input = readArgs(args);
 
-
 const usingDollars = function (content) {
     // replace "(/" and "/)" with "$"
     let result = content
@@ -72,7 +71,21 @@ const level0 = async function (inputPath) {
 }
 
 async function main() {
-    await level0(input["path"]);
+    const target = path.resolve(input.path);
+    const stat = fs.statSync(target);
+    if (stat.isDirectory()) {
+        const entries = fs.readdirSync(target);
+        for (const name of entries) {
+            const fullPath = path.join(target, name);
+            if (fs.statSync(fullPath).isFile()) {
+                console.log('格式化文件:', fullPath);
+                await level0(fullPath);
+            }
+        }
+    } else {
+        console.log('格式化文件:', target);
+        await level0(target);
+    }
 }
 
 main().catch(err => console.error(err));

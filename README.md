@@ -14,6 +14,7 @@
 
 + [MA103_线性代数](/MA103_线性代数/README.md)
 + [MA111_高等代数II](/MA111_高等代数II/README.md)
++ [MA117_高等数学上](/MA117_高等数学上/README.md)
 + [MA127_高等数学下](/MA127_高等数学下/README.md)
 
 ## 简介
