@@ -21,6 +21,7 @@ export default defineConfig({
                 text: '科目',
                 items: [
                     { text: "MA101a_数学分析I", link: '/MA101a_数学分析I/README' }
+                    , { text: "MA102a_数学分析II", link: '/MA102a_数学分析II/README' }
                     , { text: "MA103_线性代数", link: '/MA103_线性代数/README' }
                     , { text: "MA111_高等代数II", link: '/MA111_高等代数II/README' }
                     , { text: "MA127_高等数学下", link: '/MA127_高等数学下/README' }
