@@ -157,6 +157,6 @@ Thus $\left\{x_{n}\right\}$ is a Cauchy sequence．Since $X$ is complete， $\li
 Since $\varphi$ is a contraction，$\varphi$ is continuous（in fact，uniformly con－ tinuous）on $X$ ．Hence
 
 $$
-\varphi(x)=\lim _{n \rightarrow \infty} \varphi\left(x_{n}\right)=\lim _{n \rightarrow \infty} x_{n+1}=x
+\varphi(x)=\lim\limits_{n \rightarrow \infty} \varphi\left(x_{n}\right)=\lim\limits_{n \rightarrow \infty} x_{n+1}=x
 $$
 
