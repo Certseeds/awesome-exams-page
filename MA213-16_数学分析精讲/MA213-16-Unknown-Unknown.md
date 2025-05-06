@@ -1,8 +1,8 @@
-$\section*{淑芬精讲回忆版}$
+淑芬精讲回忆版
 
 －－黄景娟
 
-$\section*{一，判断}$
+一，判断
 
 1．一阶导等于 $0, x 0$ 存在严格局部极小值当且仅当二阶导大于 $0(X)$
 
@@ -24,7 +24,7 @@ $\section*{一，判断}$
 
 10．还有一个不记得了？？
 
-$\section*{二，积分}$
+二，积分
 
 $\int_{0}^{\pi} \sin ^{3} x d x$
 
@@ -122,7 +122,7 @@ But $\mathbf{g}(0)=\mathbf{f}(\mathbf{a})$ and $\mathbf{g}(1)=\mathbf{f}(\mathbf
 
 七，不动点定理证明 题干改为 $3 d(T x, T y)<d(x, y)$ ，
 
-$\section*{9．23 Theorem If $X$ is a complete metric space，and if $\varphi$ is a contraction of $X$ into $X$ ，then there exists one and only one $x \in X$ such that $\varphi(x)=x$ ．}$
+9．23 Theorem If $X$ is a complete metric space，and if $\varphi$ is a contraction of $X$ into $X$ ，then there exists one and only one $x \in X$ such that $\varphi(x)=x$
 
 Proof Pick $x_{0} \in X$ arbitrarily，and define $\left\{x_{n}\right\}$ recursively，by setting
 
@@ -152,7 +152,7 @@ d\left(x_{n}, x_{m}\right) & \leq \sum_{i=n+1}^{m} d\left(x_{i}, x_{i-1}\right) 
 \end{aligned}
 $$
 
-Thus $\left\{x_{n}\right\}$ is a Cauchy sequence．Since $X$ is complete， $\lim x_{n}=x$ for some $\boldsymbol{x} \in X$ ．
+Thus $\left\{x_{n}\right\}$ is a Cauchy sequence．Since $X$ is complete， $\lim x_{n}=x$ for some $\boldsymbol{x} \in X$
 
 Since $\varphi$ is a contraction，$\varphi$ is continuous（in fact，uniformly con－ tinuous）on $X$ ．Hence
 

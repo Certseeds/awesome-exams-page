@@ -24,7 +24,10 @@ export default defineConfig({
                     , { text: "MA102a_数学分析II", link: '/MA102a_数学分析II/README' }
                     , { text: "MA103_线性代数", link: '/MA103_线性代数/README' }
                     , { text: "MA111_高等代数II", link: '/MA111_高等代数II/README' }
+                    , { text: "MA117_高等数学上", link: '/MA117_高等数学上/README' }
                     , { text: "MA127_高等数学下", link: '/MA127_高等数学下/README' }
+                    , { text: "MA212_概率论与数理统计", link: '/MA212_概率论与数理统计/README' }
+                    , { text: "MA213-16_数学分析精讲", link: '/MA213-16_数学分析精讲/README' }
                 ]
             }
         ],
