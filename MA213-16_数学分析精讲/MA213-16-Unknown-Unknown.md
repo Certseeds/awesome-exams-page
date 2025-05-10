@@ -1,6 +1,6 @@
 淑芬精讲回忆版
 
-－－黄景娟
+--黄景娟
 
 一，判断
 
@@ -76,7 +76,7 @@ $$
 
 for every $n \geq N$ and every $x \in E$, which completes the proof.
 
-9．19 Theorem Suppose f maps a convex open set $E \subset R^{n}$ into $R^{m}$ ， f is differen－ tiable in $E$ ，and there is a real number $M$ such that
+9．19 Theorem Suppose f maps a convex open set $E \subset R^{n}$ into $R^{m}$ ， f is differen- tiable in $E$ ，and there is a real number $M$ such that
 
 $$
 \left\|\mathbf{f}^{\prime}(\mathbf{x})\right\| \leq M
@@ -154,7 +154,7 @@ $$
 
 Thus $\left\{x_{n}\right\}$ is a Cauchy sequence．Since $X$ is complete， $\lim x_{n}=x$ for some $\boldsymbol{x} \in X$
 
-Since $\varphi$ is a contraction，$\varphi$ is continuous（in fact，uniformly con－ tinuous）on $X$ ．Hence
+Since $\varphi$ is a contraction，$\varphi$ is continuous（in fact，uniformly con- tinuous）on $X$ ．Hence
 
 $$
 \varphi(x)=\lim\limits_{n \rightarrow \infty} \varphi\left(x_{n}\right)=\lim\limits_{n \rightarrow \infty} x_{n+1}=x
