@@ -10,7 +10,7 @@ import VditorEditor from './.vitepress/components/VditorEditor.vue'
 const markdownContent = ref([
     '# 开始编辑你的 Markdown',
     '',
-    '欢迎使用 Vditor 编辑器！',
+    '欢迎使用 Vditor 编辑器! ',
     '',
     '## 数学公式支持',
     '',
