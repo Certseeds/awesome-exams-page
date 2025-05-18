@@ -23,6 +23,7 @@ export default defineConfig({
                     { text: "MA101a_数学分析I", link: '/MA101a_数学分析I/README' }
                     , { text: "MA102a_数学分析II", link: '/MA102a_数学分析II/README' }
                     , { text: "MA103_线性代数", link: '/MA103_线性代数/README' }
+                    , { text: "MA107_高等代数I", link: '/MA107_高等代数I/README' }
                     , { text: "MA111_高等代数II", link: '/MA111_高等代数II/README' }
                     , { text: "MA117_高等数学上", link: '/MA117_高等数学上/README' }
                     , { text: "MA127_高等数学下", link: '/MA127_高等数学下/README' }
