@@ -39,7 +39,7 @@ async function processFiles() {
 // 将 mpx 转换分离为单独函数
 async function runMpxConvert(src, dst) {
     return new Promise((resolve, reject) => {
-        const child = spawn('pnpm', ['exec', 'mpx', 'convert', `\"${src}\"`, dst], {
+        const child = spawn('pnpm', ['exec', 'mpx', 'convert', `\"${src}\"`, `\"${dst}\"`], {
             cwd: path.join(__dirname, 'mpx-cli'),
             shell: true,
             stdio: 'inherit'

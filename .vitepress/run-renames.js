@@ -14,15 +14,16 @@ const readArgs = function (args) {
     return result;
 }
 const input = readArgs(args);
+const postfix = ".md";
 
 // 调用本地大模型接口，将文件名转换为格式：
 //   ${year}${festival}-(期中|期末)[-(答案)].md
 // 如果无法转换，则大模型返回 "INVALID"
 async function convertFileName(originalName) {
-    const baseName = path.basename(originalName, '.pdf');
+    const baseName = path.basename(originalName, postfix);
     // 构造转换提示信息
-    const prompt = `请从文件名 "${baseName}.pdf" 中提取信息
-- 提取year, 为年份, 注意如果有多个年份请返回INVAILD
+    const prompt = `/think 请从文件名 "${baseName}${postfix}" 中提取信息
+- 提取year, 为年份, 返回格式为20xx年, 注意如果有多个年份请返回INVAILD
 - 提取season, 为季节, 预期为"春"或者"秋", 注意如果没有季节则返回""
 - 提前type, 预期为期中, 期末 表示考试类型，
 - 提取answer, 为答案类型，预期为boolean
@@ -30,7 +31,7 @@ async function convertFileName(originalName) {
 如果文件名不符合这种规则，请将type置为"INVALID"。 返回格式为JSON对象，包含year, season, type, answer`;
 
     const postObject = {
-        model: "qwen2.5:14b",
+        model: "qwen3:14b",
         prompt: prompt,
         format: {
             "type": "object",
@@ -70,12 +71,11 @@ async function convertFileName(originalName) {
         return "INVALID";
     }
 }
-
 async function createRenameMapping(dirPath) {
     // 读取目录下所有文件（只处理文件，不递归目录）
     const allFiles = fs.readdirSync(dirPath);
     // 过滤 pdf 文件（忽略大小写）
-    const pdfFiles = allFiles.filter(f => path.extname(f).toLowerCase() === '.pdf');
+    const pdfFiles = allFiles.filter(f => path.extname(f).toLowerCase() === postfix);
 
     const mapping = {};    // 原文件名 -> 新文件名
     const abandon = [];    // 无法转换的文件
@@ -89,14 +89,14 @@ async function createRenameMapping(dirPath) {
             abandon.push(file);
             continue;
         }
-        const newName = `${year}${season}-${type}${answer ? '-答案' : ''}.pdf`;
+        const newName = `${year}${season}-${type}${answer ? '-答案' : ''}${postfix}`;
         
         console.log(newName);
         // 处理冲突：若存在同名文件，则添加 -1, -2 后缀
         let finalName = newName;
         let count = 2;
         while (usedNames[finalName]) {
-            const ext = path.extname(newName); // 应为 .md
+            const ext = path.extname(newName);
             const nameWithoutExt = newName.slice(0, -ext.length);
             finalName = `${nameWithoutExt}-${count}${ext}`;
             count++;
