@@ -107,7 +107,7 @@ $ pnpm --version
 
 贡献是使开源社区成为学习、启发和创造的绝佳场所的关键。我们非常感谢您的任何贡献。
 
-如果您有改进建议，请复刻(fork)仓库并创建拉取请求(pull request)。您也可以简单地在Discussions的Ideas部分开启一个讨论
+如果您有改进建议, 请复刻(fork)仓库并创建拉取请求(pull request)。您也可以简单地在Discussions的Ideas部分开启一个讨论
 
 别忘了给项目点星标! 再次感谢!
 

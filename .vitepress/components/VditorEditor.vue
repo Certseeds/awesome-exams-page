@@ -46,7 +46,7 @@ watch(
 )
 
 onMounted(async () => {
-  // 动态导入Vditor，避免SSR问题
+  // 动态导入Vditor, 避免SSR问题
   const Vditor = (await import('vditor')).default
 
   // 默认配置

@@ -90,7 +90,7 @@ export default defineConfig({
             // 避免在SSR期间尝试导入Vditor
             noExternal: ['vditor']
         },
-        // 避免CSS代码分割，确保Vditor样式可用
+        // 避免CSS代码分割, 确保Vditor样式可用
         build: {
             cssCodeSplit: false
         }

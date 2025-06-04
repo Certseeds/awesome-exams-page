@@ -16,19 +16,19 @@ const readArgs = function (args) {
 const input = readArgs(args);
 const postfix = ".md";
 
-// 调用本地大模型接口，将文件名转换为格式：
+// 调用本地大模型接口, 将文件名转换为格式：
 //   ${year}${festival}-(期中|期末)[-(答案)].md
-// 如果无法转换，则大模型返回 "INVALID"
+// 如果无法转换, 则大模型返回 "INVALID"
 async function convertFileName(originalName) {
     const baseName = path.basename(originalName, postfix);
     // 构造转换提示信息
     const prompt = `/think 请从文件名 "${baseName}${postfix}" 中提取信息
 - 提取year, 为年份, 返回格式为20xx年, 注意如果有多个年份请返回INVAILD
 - 提取season, 为季节, 预期为"春"或者"秋", 注意如果没有季节则返回""
-- 提前type, 预期为期中, 期末 表示考试类型，
-- 提取answer, 为答案类型，预期为boolean
+- 提前type, 预期为期中, 期末 表示考试类型, 
+- 提取answer, 为答案类型, 预期为boolean
 
-如果文件名不符合这种规则，请将type置为"INVALID"。 返回格式为JSON对象，包含year, season, type, answer`;
+如果文件名不符合这种规则, 请将type置为"INVALID". 返回格式为JSON对象, 包含year, season, type, answer`;
 
     const postObject = {
         model: "qwen3:14b",
@@ -67,14 +67,14 @@ async function convertFileName(originalName) {
         const respnames = JSON.parse(data['response']);
         return respnames;
     } catch (error) {
-        console.error(`LLM转换错误（${originalName}）：`, error);
+        console.error(`LLM转换错误(${originalName})：`, error);
         return "INVALID";
     }
 }
 async function createRenameMapping(dirPath) {
-    // 读取目录下所有文件（只处理文件，不递归目录）
+    // 读取目录下所有文件(只处理文件, 不递归目录)
     const allFiles = fs.readdirSync(dirPath);
-    // 过滤 pdf 文件（忽略大小写）
+    // 过滤 pdf 文件(忽略大小写)
     const pdfFiles = allFiles.filter(f => path.extname(f).toLowerCase() === postfix);
 
     const mapping = {};    // 原文件名 -> 新文件名
@@ -92,7 +92,7 @@ async function createRenameMapping(dirPath) {
         const newName = `${year}${season}-${type}${answer ? '-答案' : ''}${postfix}`;
         
         console.log(newName);
-        // 处理冲突：若存在同名文件，则添加 -1, -2 后缀
+        // 处理冲突：若存在同名文件, 则添加 -1, -2 后缀
         let finalName = newName;
         let count = 2;
         while (usedNames[finalName]) {

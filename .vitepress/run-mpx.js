@@ -31,7 +31,7 @@ async function processFiles() {
         console.log(src, dst);
 
         console.log('开始执行 MPX 转换...');
-        // 使用Promise链式调用，确保在转换完成后再执行格式化
+        // 使用Promise链式调用, 确保在转换完成后再执行格式化
         await runMpxConvert(src, dst)
     }
 }
