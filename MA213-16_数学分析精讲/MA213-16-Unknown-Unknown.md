@@ -1,54 +1,78 @@
-淑芬精讲回忆版
+# 数学分析精讲回忆版
 
---黄景娟
+作者：黄景娟
 
-## 一, 判断
+## 1 判断题
 
-1.一阶导等于 $0, x 0$ 存在严格局部极小值当且仅当二阶导大于 $0(X)$
+### 1-1
 
-2. $\mathrm{R}^{\mathrm{n}}$ 任意范数等价
+一阶导等于 $0, x_0$ 存在严格局部极小值当且仅当二阶导大于 $0$ (×)
 
-3.$x \in(0,1) , x^{n}$ 不一致收敛到 0
+### 1-2
 
-4.等度连续则一致连续
+$\mathbb{R}^{n}$ 任意范数等价
 
-5.$a>0, ~ \log _{a} \times$ 不是凸函数
+### 1-3
 
-6.紧空间存在可数稠密子集
+$x \in(0,1), x^{n}$ 不一致收敛到 0
 
-7.fn连续 + 逐点收敛不能推 f 连续
+### 1-4
 
-8.偏导数存在不能推可微
+等度连续则一致连续
 
-9.可逆线性算子是 $L\left(R^{n}\right)$ 的开集
+### 1-5
 
-10.还有一个不记得了? ?
+$a>0, \log _{a} x$ 不是凸函数
 
-## 二, 积分
+### 1-6
+
+紧空间存在可数稠密子集
+
+### 1-7
+
+$f_n$ 连续 + 逐点收敛不能推 $f$ 连续
+
+### 1-8
+
+偏导数存在不能推可微
+
+### 1-9
+
+可逆线性算子是 $L\left(\mathbb{R}^{n}\right)$ 的开集
+
+### 1-10
+
+还有一个不记得了
+
+## 2 积分
+
+### 2-1
 
 $\int_{0}^{\pi} \sin ^{3} x d x$
 
+### 2-2
+
 $\int_{1}^{2} x \ln x d x$
 
-## 三
+## 3
 
-$f$ 连续可微, $f(1) =0, \int_{0}^{1} f^{4}(x) d x=1$, 证明 $\int_{0}^{1} f^{\prime}(x) ^{2} d x \int_{0}^{1} x^{2} f^{6}(x) d x>\frac{1}{16}$解:
+$f$ 连续可微, $f(1) =0, \int_{0}^{1} f^{4}(x) d x=1$, 证明 $\int_{0}^{1} f^{\prime}(x)^{2} d x \int_{0}^{1} x^{2} f^{6}(x) d x>\frac{1}{16}$
+
+**解:**
 
 用Cauchy不等式即
 
-$$
-\left(\int_{a}^{b} f(x) g(x) d x\right) ^{2} \leq \int_{a}^{b} f^{2}(x) d x \cdot \int_{a}^{b} g^{2}(x) d x
-$$
+$$\left(\int_{a}^{b} f(x) g(x) d x\right)^{2} \leq \int_{a}^{b} f^{2}(x) d x \cdot \int_{a}^{b} g^{2}(x) d x$$
 
 放缩, 接着用分部积分证明不等式
 
-## 四
+## 4
 
-给出 $f(x, y)$ 和 $v$ 和 $x_{0}$ , 求 $f^{\prime}\left(x_{0}\right) (v)$ 要用矩阵, 转为梯度算然后 8 分没了
+给出 $f(x, y)$ 和 $v$ 和 $x_{0}$, 求 $f^{\prime}\left(x_{0}\right)(v)$ 要用矩阵, 转为梯度算然后 8 分没了
 
-## 五
+## 5
 
-一致收玫和一致Cauchy等价证明, 改为了sup $\left|f_{n}-f_{m}\right|$ , 本质一样
+一致收敛和一致Cauchy等价证明, 改为了 $\sup |f_{n}-f_{m}|$, 本质一样
 
 7.8 Theorem The sequence of functions $\left\{f_{n}\right\}$, defined on $E$, converges uniformly on $E$ if and only if for every $\varepsilon>0$ there exists an integer $N$ such that $m \geq N$, $n \geq N, x \in E$ implies
 
