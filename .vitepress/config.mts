@@ -36,7 +36,7 @@ export default defineConfig({
             { icon: 'github', link: 'https://github.com/Certseeds/awesome-exams-page' }
         ],
         footer: {
-            copyright: `2025-${new Date().getFullYear()} Certseeds; this page is licensed under CC BY-NC-SA 4.0; 本站非官方, 不盈利, 纯免费, 严禁商用`
+            copyright: `2025-${new Date().getFullYear()} Certseeds; this page is licensed under CC BY-NC-SA 4.0; 本站不盈利, 纯免费, 严禁商用`
         },
         lastUpdated: {
             formatOptions: {
@@ -63,12 +63,12 @@ export default defineConfig({
     head: [
         ['meta', { property: 'og:type', content: 'website' }],
         ['meta', { property: 'og:locale', content: 'zh-CN' }],
-        ['meta', { property: 'og:title', content: 'awesome-exams-page | Static Book Site Powered by VitePress' }],
+        ['meta', { property: 'og:title', content: 'awesome-exams-page | Awesome Sustech Exams Page Powered by VitePress' }],
         ['meta', { property: 'og:site_name', content: 'awesome-exams-page' }],
         ['meta', { property: 'og:image', content: `${hostURL}/favicon.ico` }],
         ['meta', { property: 'og:url', content: `${hostURL}` }],
         ['meta', { property: 'twitter:card', content: 'summary_large_image' }],
-        ['meta', { property: 'twitter:title', content: 'awesome-exams-page | Static Book Site Powered by VitePress' }],
+        ['meta', { property: 'twitter:title', content: 'awesome-exams-page |  Awesome Sustech Exams Page Powered by VitePress' }],
         ['meta', { property: 'twitter:image', content: `${hostURL}/favicon.ico` }],
         ['meta', { property: 'twitter:description', content: 'awesome sustech exams page' }],
         ['meta', { property: 'keywords', content: 'vitepress, sustech, nodejs, mathpix, latex' }],
