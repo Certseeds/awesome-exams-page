@@ -55,6 +55,10 @@ export default defineConfig({
                 formatMatcher: "basic",
             },
         },
+        editLink: {
+            pattern: 'https://github.com/Certseeds/awesome-exams-page/blob/master/:path?plain=1',
+            text: '在GitHub上查看本页面源代码'
+        }
     },
     head: [
         ['meta', { property: 'og:type', content: 'website' }],
