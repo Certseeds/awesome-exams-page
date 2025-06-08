@@ -35,9 +35,34 @@ jobs:
 
       - name: get a index page
         run: cp ./README.md ./index.md
-          
       - name: Install dependencies
         run: pnpm install
+
+      - uses: r-lib/actions/setup-pandoc@v2
+        with:
+          pandoc-version: '3.7'
+
+      - name: install texlive deps
+        run: |
+          export DEBIAN_FRONTEND=noninteractive
+          export TZ=Asia/Shanghai
+          sudo apt-get update
+          sudo apt-get install -y \
+            texlive-latex-base \
+            texlive-fonts-recommended \
+            texlive-latex-extra \
+            texlive-xetex \
+            texlive-luatex \
+            texlive-lang-chinese \
+            texlive-lang-cjk
+
+      - name: generate PDFs
+        run: |
+          pnpm \
+            exec node \
+            --experimental-strip-types \
+            --experimental-transform-types \
+              ./.vitepress/run-pdfs.ts
 
       - name: build
         run: pnpm run docs:build
