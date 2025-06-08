@@ -100,9 +100,20 @@ function createTempHeader() {
     const tmpDir = path.join(os.tmpdir(), 'awesome-exams-pdfs');
     fs.mkdirSync(tmpDir, { recursive: true });
     const headerFile = path.join(tmpDir, `header-${Date.now()}.tex`);
-    
+    // 扩展LaTeX包支持
+    const headerContent = `
+\\usepackage{amsmath}
+\\usepackage{amssymb}
+\\usepackage{xeCJK}
+\\usepackage{mathtools}
+\\usepackage{bm}
+\\usepackage{array}
+\\allowdisplaybreaks
+\\setlength{\\parindent}{0pt}
+\\setlength{\\parskip}{6pt plus 2pt minus 1pt}
+`;
     // 写入LaTeX包引用
-    fs.writeFileSync(headerFile, '\\usepackage{amsmath,amssymb,xeCJK}');
+    fs.writeFileSync(headerFile, headerContent);
     
     return headerFile;
 }
@@ -123,10 +134,13 @@ function convertMdToPdf(mdPath, outputPath) {
             const args = [
                 mdPath, '-o', outputPath,
                 '--pdf-engine=xelatex',
+                '--mathjax',
                 '--variable', 'geometry:margin=2cm',
                 '--variable', 'fontsize=12pt',
                 '--variable', 'documentclass=article',
-                '--include-in-header', headerFile
+                '--include-in-header', headerFile,
+                '--from', 'markdown+tex_math_dollars+tex_math_single_backslash',
+                '--wrap=none'
             ];
             
             console.log(`转换: ${mdPath} -> ${outputPath}`);

@@ -182,11 +182,10 @@ d\left(x_{n}, x_{m}\right) & \leq \sum_{i=n+1}^{m} d\left(x_{i}, x_{i-1}\right) 
 \end{aligned}
 $$
 
-Thus $\left\{x_{n}\right\}$ is a Cauchy sequence.Since $X$ is complete, $\lim x_{n}=x$ for some $\boldsymbol{x} \in X$
+Thus $\left\{x_{n}\right\}$ is a Cauchy sequence.Since $X$ is complete, $\lim x_{n}=x$ for some $x \in X$
 
 Since $\varphi$ is a contraction, $\varphi$ is continuous(in fact, uniformly con- tinuous) on $X$ .Hence
 
 $$
 \varphi(x) =\lim\limits_{n \rightarrow \infty} \varphi\left(x_{n}\right) =\lim\limits_{n \rightarrow \infty} x_{n+1}=x
 $$
-
