@@ -28,8 +28,7 @@ jobs:
         uses: actions/cache@v4
         with:
           path: |
-            /var/cache/apt/archives
-            /var/lib/apt/lists
+            ~/.cache/apt-archives
           key: ${{ runner.os }}-apt-${{ hashFiles('**/texlive.list') }}
           restore-keys: |
             ${{ runner.os }}-apt-
@@ -58,8 +57,11 @@ jobs:
       - name: install texlive deps
         run: |
           export DEBIAN_FRONTEND=noninteractive
+          mkdir -p ~/.cache/apt-archives
           sudo apt-get update
           sudo apt-get install -y $(cat .vitepress/texlive.list | tr '\n' ' ')
+          sudo cp /var/cache/apt/archives/*.deb ~/.cache/apt-archives/ || true
+          sudo chown -R $(whoami):$(whoami) ~/.cache/apt-archives || true
 
       - name: generate PDFs
         run: |
