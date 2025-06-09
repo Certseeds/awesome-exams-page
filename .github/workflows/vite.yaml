@@ -21,6 +21,19 @@ jobs:
           submodules: true  # Fetch Hugo themes (true OR recursive)
           fetch-depth: 0
 
+      - name: Set Timezone
+        run: sudo timedatectl set-timezone Asia/Shanghai
+
+      - name: Cache apt packages
+        uses: actions/cache@v4
+        with:
+          path: |
+            /var/cache/apt/archives
+            /var/lib/apt/lists
+          key: ${{ runner.os }}-apt-${{ hashFiles('**/texlive.list') }}
+          restore-keys: |
+            ${{ runner.os }}-apt-
+
       - uses: pnpm/action-setup@v4
         name: Install pnpm
         with:
@@ -45,16 +58,8 @@ jobs:
       - name: install texlive deps
         run: |
           export DEBIAN_FRONTEND=noninteractive
-          export TZ=Asia/Shanghai
           sudo apt-get update
-          sudo apt-get install -y \
-            texlive-latex-base \
-            texlive-fonts-recommended \
-            texlive-latex-extra \
-            texlive-xetex \
-            texlive-luatex \
-            texlive-lang-chinese \
-            texlive-lang-cjk
+          sudo apt-get install -y $(cat .vitepress/texlive.list | tr '\n' ' ')
 
       - name: generate PDFs
         run: |
