@@ -14,7 +14,7 @@ const readArgs = function (args) {
     return result;
 }
 const input = readArgs(args);
-const postfix = ".md";
+const postfix = ".pdf";
 
 // 调用本地大模型接口, 将文件名转换为格式：
 //   ${year}${festival}-(期中|期末)[-(答案)].md
