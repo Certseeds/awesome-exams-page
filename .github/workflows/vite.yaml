@@ -58,6 +58,7 @@ jobs:
         run: |
           export DEBIAN_FRONTEND=noninteractive
           mkdir -p ~/.cache/apt-archives
+          sudo cp ~/.cache/apt-archives/*.deb /var/cache/apt/archives/ || true
           sudo apt-get update
           sudo apt-get install -y $(cat .vitepress/texlive.list | tr '\n' ' ')
           sudo cp /var/cache/apt/archives/*.deb ~/.cache/apt-archives/ || true
