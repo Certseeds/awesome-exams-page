@@ -1,6 +1,6 @@
 # 文件校对
 
-> 下面是markdown+$\LaTex$文件校对需要参考的细节
+> 下面是markdown+ $\LaTex$ 文件校对需要参考的细节
 
 0. 校对任务中模型不能使用任何工具, 只能输出文本
 1. `\left` `\right` 如果不需要括号, 需要写成 `\left.` `\right.`, 不能后面不接任何符号
@@ -10,3 +10,5 @@
 5. 不能使用 `\tag{}`, 建议用 `\quad \quad \quad (1)`
 6. `\right\rvert\` 替换为 `\right|`
 7. 需要确保$$$$符号之间的多行公式没有空行
+8. 不需要将 $f^{\prime}(x)$ 改为 $f'(x)$
+9. 填空题使用 $\underline{\quad\quad\quad}$ 表示待填空白
