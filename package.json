@@ -22,9 +22,9 @@
     "author": "Certseeds",
     "license": "CC-BY-NC-SA-4.0 And AGPL-v3.0-or-later",
     "dependencies": {
-        "vditor": "^3.11.0",
-        "vue": "^3.5.13",
-        "markdown-it-mathjax3": "^4.3.2"
+        "markdown-it-mathjax3": "^4.3.2",
+        "vditor": "^3.11.1",
+        "vue": "^3.5.19"
     },
     "devDependencies": {
         "markdown-it-footnote": "^4.0.0",
