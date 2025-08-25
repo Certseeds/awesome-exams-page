@@ -68,7 +68,7 @@ $f$ 连续可微, $f(1) =0$, $\int_{0}^{1} f^{4}(x) dx=1$, 证明 $\int_{0}^{1} 
 
 用 Cauchy 不等式即
 
-$$\left(\int_{a}^{b} f(x) g(x) dx\right)^{2} \leq \int_{a}^{b} f^{2}(x) dx \cdot \int_{a}^{b} g^{2}(x) dx$$
+$$(\int_{a}^{b} f(x) g(x) dx)^{2} \leq \int_{a}^{b} f^{2}(x) dx \cdot \int_{a}^{b} g^{2}(x) dx$$
 
 放缩, 接着用分部积分证明不等式
 
@@ -85,7 +85,7 @@ $$\left(\int_{a}^{b} f(x) g(x) dx\right)^{2} \leq \int_{a}^{b} f^{2}(x) dx \cdot
 The sequence of functions $\{f_{n}\}$, defined on $E$, converges uniformly on $E$ if and only if for every $\varepsilon>0$ there exists an integer $N$ such that $m \geq N$, $n \geq N, x \in E$ implies
 
 $$
-\left|f_{n}(x) -f_{m}(x) \right| \leq \varepsilon
+|f_{n}(x) -f_{m}(x) | \leq \varepsilon
 $$
 
 > mark as euqation (13)
@@ -95,13 +95,13 @@ $$
 Suppose $\{f_{n}\}$ converges uniformly on $E$, and let $f$ be the limit function. Then there is an integer $N$ such that $n \geq N, x \in E$ implies
 
 $$
-\left|f_{n}(x) -f(x) \right| \leq \frac{\varepsilon}{2},
+|f_{n}(x) -f(x) | \leq \frac{\varepsilon}{2},
 $$
 
 so that
 
 $$
-\left|f_{n}(x) -f_{m}(x) \right| \leq\left|f_{n}(x) -f(x) \right|+\left|f(x) -f_{m}(x) \right| \leq \varepsilon
+|f_{n}(x) -f_{m}(x) | \leq|f_{n}(x) -f(x) |+|f(x) -f_{m}(x) | \leq \varepsilon
 $$
 
 if $n \geq N, m \geq N, x \in E$. Conversely, suppose the Cauchy condition holds.
@@ -111,7 +111,7 @@ Then, the sequence $\{f_{n}(x) \}$ converges, for every $x$, to a limit which we
 Let $\varepsilon>0$ be given, and choose $N$ such that (13) holds. Fix $n$, and let $m \rightarrow \infty$ in (13) . Since $f_{m}(x) \rightarrow f(x)$ as $m \rightarrow \infty$, this gives
 
 $$
-\left|f_{n}(x) -f(x) \right| \leq \varepsilon
+|f_{n}(x) -f(x) | \leq \varepsilon
 $$
 
 > mark as euqation (14)
@@ -127,7 +127,7 @@ for every $n \geq N$ and every $x \in E$, which completes the proof
 Suppose $f$ maps a convex open set $E \subset R^{n}$ into $R^{m}$ , $f$ is differentiable in $E$ , and there is a real number $M$ such that
 
 $$
-\left\|\mathbf{f}^{\prime}(\mathbf{x}) \right\| \leq M
+\|\mathbf{f}^{\prime}(\mathbf{x}) \| \leq M
 $$
 
 for every $\mathbf{x} \in E$ .Then
@@ -161,7 +161,7 @@ $$
 so that
 
 $$
-\left|\mathbf{g}^{\prime}(t) \right| \leq\left\|\mathbf{f}^{\prime}(\gamma(t) ) \right\||\mathbf{b}-\mathbf{a}| \leq M|\mathbf{b}-\mathbf{a}|
+|\mathbf{g}^{\prime}(t) | \leq\|\mathbf{f}^{\prime}(\gamma(t) ) \||\mathbf{b}-\mathbf{a}| \leq M|\mathbf{b}-\mathbf{a}|
 $$
 
 for all $t \in[0,1]$ .By Theorem 5.19,
