@@ -1,3 +1,5 @@
+> 下面是markdown+ $\LaTex$ 文件校对需要参考的细节
+
 1. `\left` `\right` 如果不需要括号, 需要写成 `\left.` `\right.`
 2. `\left(` 如果与`\begin`块有关则不可取代, 其他场景可以替换为 `(`, 同理对`\right)`
   2.1 `\left[` 如果与`\begin`块有关则不可取代, 其他场景可以替换为 `[`, 同理对`\right]`
@@ -9,3 +11,6 @@
 5. `\begin{array}{ccc:c}`里面不能用`:`, 只能用`|`
 6. 不能使用 `\tag{}`, 建议用 `\quad \quad \quad (1)`
 7. `\rvert\` 替换为 `\mid`, `\lvert\` 替换为 `\mid`
+8. 需要确保$$$$符号之间的多行公式没有空行
+9. 不需要将 $f^{\prime}(x)$ 改为 $f'(x)$
+10. 填空题使用 $\underline{\quad\quad\quad}$ 表示待填空白
