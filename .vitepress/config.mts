@@ -75,9 +75,10 @@ export default defineConfig({
         ['meta', { property: 'keywords', content: 'vitepress, sustech, nodejs, mathpix, latex' }],
         ['meta', { property: 'robots', content: 'index, follow' }],
         ['meta', { property: 'author', content: 'Certseeds, NikeTacoHub' }],
-        ['meta', { property: 'copyleft', content: 'CC BY-NC-SA 4.0' }],
-        ['link', { property: 'license', href: "http://creativecommons.org/licenses/by-nc-sa/4.0/" }],
-
+        ['meta', { property: 'copyleft', content: 'CC-BY-NC-SA-4.0' }],
+        ['meta', { name: 'license', content: 'CC-BY-NC-SA-4.0' }],
+        ['link', { rel: 'license', href: 'https://creativecommons.org/licenses/by-nc-sa/4.0/' }],
+        ['meta', { name: 'google-site-verification', content: 'RUZjTQhfsgxj0JmyySNM82pLKT-9thJwEbNZz372ee4' }]
     ],
     markdown: {
         config: (md) => {
