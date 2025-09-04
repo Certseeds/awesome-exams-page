@@ -1,0 +1,47 @@
+# Allow Google crawlers
+User-agent: Googlebot
+Allow: /
+
+User-agent: Googlebot-Image
+Allow: /
+
+User-agent: Googlebot-News
+Allow: /
+
+User-agent: Googlebot-Video
+Allow: /
+
+User-agent: AdsBot-Google
+Allow: /
+
+User-agent: AdsBot-Google-Mobile
+Allow: /
+
+User-agent: Feedfetcher-Google
+Allow: /
+
+User-agent: Google-Read-Aloud
+Allow: /
+
+User-agent: DuplexWeb-Google
+Allow: /
+
+User-agent: GoogleOther
+Allow: /
+
+# Allow Bing crawlers
+User-agent: Bingbot
+Allow: /
+
+User-agent: BingPreview
+Allow: /
+
+User-agent: MsnBot
+Allow: /
+
+User-agent: MsnBot-Media
+Allow: /
+
+User-agent: *
+Disallow: /
+Sitemap: https://certseeds.github.io/awesome-exams-page/sitemap.xml
