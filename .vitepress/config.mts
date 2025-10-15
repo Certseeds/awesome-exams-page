@@ -21,8 +21,7 @@ export default defineConfig({
                 text: '科目',
                 items: [
                     { text: "CS203_数据结构与算法分析", link: '/CS203_数据结构与算法分析/README' }
-                    , 
-                    { text: "MA101a_数学分析I", link: '/MA101a_数学分析I/README' }
+                    , { text: "MA101a_数学分析I", link: '/MA101a_数学分析I/README' }
                     , { text: "MA102a_数学分析II", link: '/MA102a_数学分析II/README' }
                     , { text: "MA103_线性代数", link: '/MA103_线性代数/README' }
                     , { text: "MA107_高等代数I", link: '/MA107_高等代数I/README' }
