@@ -1,5 +1,5 @@
-# Created by https://www.toptal.com/developers/gitignore/api/python,jupyternotebooks,node,windows,macos,linux,video,audio,images
-# Edit at https://www.toptal.com/developers/gitignore?templates=python,jupyternotebooks,node,windows,macos,linux,video,audio,images
+# Created by https://www.toptal.com/developers/gitignore/api/python,jupyternotebooks,node,windows,macos,linux,video,audio,images,microsoftoffice
+# Edit at https://www.toptal.com/developers/gitignore?templates=python,jupyternotebooks,node,windows,macos,linux,video,audio,images,microsoftoffice
 
 ### Audio ###
 *.aif
@@ -141,6 +141,27 @@ Temporary Items
 ### macOS Patch ###
 # iCloud generated files
 *.icloud
+
+### MicrosoftOffice ###
+*.tmp
+
+# Word temporary
+~$*.doc*
+
+# Word Auto Backup File
+Backup of *.doc*
+
+# Excel temporary
+~$*.xls*
+
+# Excel Backup File
+*.xlk
+
+# PowerPoint temporary
+~$*.ppt*
+
+# Visio autosave temporary files
+*.~vsd*
 
 ### Node ###
 # Logs
@@ -492,7 +513,8 @@ $RECYCLE.BIN/
 # Windows shortcuts
 *.lnk
 
-# End of https://www.toptal.com/developers/gitignore/api/python,jupyternotebooks,node,windows,macos,linux,video,audio,images
+# End of https://www.toptal.com/developers/gitignore/api/python,jupyternotebooks,node,windows,macos,linux,video,audio,images,microsoftoffice
 
 .vitepress/dist
 .vitepress/cache
+*.docx
