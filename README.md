@@ -72,16 +72,6 @@ $ pnpm --version
 3. 在本地执行 `pnpm docs:dev` 启动本地服务器
 4. 在浏览器中打开 `http://localhost:5173/awesome-exams-page/README` 查看效果
 
-### 使用mathpix对pdf进行识别, 初步清理
-
-注意mathpix使用需要会员, 免费套餐只有10页pdf转换额度.
-
-1. 命令行进入 `./.vitepress/mpx-cli`
-2. 执行 `pnpm install`
-3. 在命令行执行 `pnpm exec mpx login` 登录
-4. 返回到根目录, 调用 `pnpm exec node ./.vitepress/run-mpx.js "${src-folder}"`对目录内所有pdf进行识别
-5. 识别完成后, `pnpm exec node ./.vitepress/formats.js ${file}` 对产出的每一个文件进行格式化, 方便后续vitepress渲染
-
 ### 清理
 
 1. 命令行执行 `pnpm docs:dev`
