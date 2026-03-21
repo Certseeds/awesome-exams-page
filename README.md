@@ -12,25 +12,25 @@
 
 ## 科目
 
-+ [CS203_数据机构与算法分析](/CS203_数据结构与算法分析/README.md)
++ [CS203-数据机构与算法分析](/CS203-数据结构与算法分析/README.md)
 
-+ [MA101a_数学分析I](/MA101a_数学分析I/README.md)
-+ [MA102a_数学分析II](/MA102a_数学分析II/README.md)
-+ [MA103_线性代数](/MA103_线性代数/README.md)
-+ [MA107_高等代数I](/MA107_高等代数I/README.md)
-+ [MA111_高等代数II](/MA107_高等代数I/README.md)
-+ [MA111_高等代数II](/MA111_高等代数II/README.md)
-+ [MA117_高等数学上](/MA117_高等数学上/README.md)
-+ [MA127_高等数学下](/MA127_高等数学下/README.md)
-+ [MA203a_数学分析III](/MA203a_数学分析III/README.md)
-+ [MA212_概率论与数理统计](/MA212_概率论与数理统计/README.md)
-+ [MA213-16_数学分析精讲](/MA213-16_数学分析精讲/README.md)
-
-
++ [MA101a-数学分析I](/MA101a-数学分析I/README.md)
++ [MA102a-数学分析II](/MA102a-数学分析II/README.md)
++ [MA103-线性代数](/MA103-线性代数/README.md)
++ [MA107-高等代数I](/MA107-高等代数I/README.md)
++ [MA111-高等代数II](/MA107-高等代数I/README.md)
++ [MA111-高等代数II](/MA111-高等代数II/README.md)
++ [MA117-高等数学I](/MA117-高等数学I/README.md)
++ [MA127-高等数学II](/MA127-高等数学II/README.md)
++ [MA203a-数学分析III](/MA203a-数学分析III/README.md)
++ [MA212-概率论与数理统计](/MA212-概率论与数理统计/README.md)
++ [MA213-16-数学分析精讲](/MA213-16-数学分析精讲/README.md)
 
 ## 简介
 
-这是上游项目[NikeTacoHub-Awesome-Exams](https://github.com/NikeTacoHub/awesome-exams/)的fork, 同样使用CC BY-NC-SA 4.0协议, 目标是保存markdown格式的awesome-exams内容, 同时以其为基础构建静态站点.
+这是上游项目[Awesome-Exams](https://github.com/Certseeds-Fork/awesome-exams/)的fork,
+
+使用CC BY-NC-SA 4.0协议, 目标是保存markdown格式的awesome-exams内容, 同时以其为基础构建静态站点.
 
 > [!NOTE]
 >
