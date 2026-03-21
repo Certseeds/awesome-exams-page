@@ -58,9 +58,9 @@ function parseReadmeForLinks(readmePath) {
         const content = fs.readFileSync(readmePath, 'utf-8');
         const lines = content.split('\n');
         
-        // 匹配格式：+ [文件名](/路径/文件.md)
+        // 匹配格式：+ [文件名](/路径/文件.md) 或 `  + [文件名](/路径/文件.md)`，支持缩进
         // 排除包含TODO的行
-        const pattern = /^\+ \[([^\]]+)\]\(([^)]+\.md)\)$/;
+        const pattern = /^\s*[+]\s+\[([^\]]+)\]\(([^)]+\.md)\)$/;
         
         for (const line of lines) {
             const trimmedLine = line.trim();
@@ -69,7 +69,7 @@ function parseReadmeForLinks(readmePath) {
                 continue;
             }
             
-            const match = trimmedLine.match(pattern);
+            const match = line.match(pattern);
             if (match) {
                 const title = match[1];
                 let filePath = match[2];
