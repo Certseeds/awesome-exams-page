@@ -42,7 +42,7 @@
 
 ## Why This Project start
 
-上游项目[NikeTacoHub-Awesome-Exams](https://github.com/NikeTacoHub/awesome-exams)提供了大量的pdf文件供参考, 然而github的存储库大小是有限的, free计划大概5G, 按平均一份扫描件10MB来计算, 只能存几百个文件; 再加上扫描件对打印, ai-chat等场景的支持有限, markdown格式的文件更适合做为知识库.
+上游项目[Awesome-Exams](https://github.com/Certseeds-Fork/awesome-exams)提供了大量的pdf文件供参考, 然而github的存储库大小是有限的, free计划大概5G, 按平均一份扫描件10MB来计算, 只能存几百个文件; 再加上扫描件对打印, ai-chat等场景的支持有限, markdown格式的文件更适合做为知识库.
 
 为了更好的在浏览器中渲染markdown文件, 没有采用github对jupiter-notebook的支持带来的latex渲染, 选择使用vitepress搭建了一个静态的GitHub Pages来方便浏览.
 

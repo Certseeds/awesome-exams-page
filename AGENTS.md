@@ -1,6 +1,6 @@
 # agents.md
 
-1. 这是上游项目[NikeTacoHub-Awesome-Exams](https://github.com/NikeTacoHub/awesome-exams/)的fork, 同样使用CC BY-NC-SA 4.0协议, 目标是保存markdown格式的awesome-exams内容, 同时以其为基础构建静态站点.
+1. 这是上游项目[Awesome-Exams](https://github.com/Certseeds-Fork/awesome-exams/)的fork, 同样使用CC BY-NC-SA 4.0协议, 目标是保存markdown格式的awesome-exams内容, 同时以其为基础构建静态站点.
 2. 本项目使用github markdown风格+latex表示数学公式, 并使用vitepress构建
 3. 本仓库中应该遵守 `1.` `2. `等大题题目重构为 ## 一(中文) 换行 题目描述(如果没有不要造出来)
 4. 本仓库中应该遵守小题目重构为 `### ${大题阿拉伯数字序号}-${小题阿拉伯数字序号}`的方式
