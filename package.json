@@ -24,10 +24,10 @@
     "dependencies": {
         "markdown-it-mathjax3": "^4.3.2",
         "vditor": "^3.11.2",
-        "vue": "^3.5.29"
+        "vue": "^3.5.32"
     },
     "devDependencies": {
         "markdown-it-footnote": "^4.0.0",
-        "vitepress": "2.0.0-alpha.16"
+        "vitepress": "2.0.0-alpha.17"
     }
 }
