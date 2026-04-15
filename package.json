@@ -8,7 +8,8 @@
         "test": "echo \"Error: no test specified\" && exit 1",
         "docs:dev": "vitepress dev",
         "docs:build": "vitepress build",
-        "docs:preview": "vitepress preview"
+        "docs:preview": "vitepress preview",
+        "mcp:jupyter": "uv run cursor-notebook-mcp --transport streamable-http --allow-root %CD% --host 127.0.0.1 --port 32942"
     },
     "keywords": [
         "sustech",

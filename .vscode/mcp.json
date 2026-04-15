@@ -1,0 +1,9 @@
+{
+	"servers": {
+		"jupyter-mcp-01": {
+			"url": "http://127.0.0.1:32942/mcp",
+			"type": "http"
+		}
+	},
+	"inputs": []
+}

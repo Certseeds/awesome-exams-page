@@ -10,3 +10,9 @@ dependencies = [
     "jupyterlite-pyodide-kernel>=0.7.1",
     "notebook>=7.5.5",
 ]
+
+[dependency-groups]
+dev = [
+    "cursor-notebook-mcp>=0.3.1",
+    "pydantic==2.11.0", # cursor-notebook-mcp do not work with pydantic 2.12.0+
+]
