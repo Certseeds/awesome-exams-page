@@ -147,6 +147,8 @@ version = "0.1.0"
 source = { virtual = "." }
 dependencies = [
     { name = "jupyterlab" },
+    { name = "jupyterlab-language-pack-zh-cn" },
+    { name = "jupyterlab-server" },
     { name = "jupyterlite-core" },
     { name = "jupyterlite-pyodide-kernel" },
     { name = "notebook" },
@@ -161,6 +163,8 @@ dev = [
 [package.metadata]
 requires-dist = [
     { name = "jupyterlab", specifier = ">=4.5.6" },
+    { name = "jupyterlab-language-pack-zh-cn", specifier = ">=4.5.post3" },
+    { name = "jupyterlab-server", specifier = ">=2.28.0" },
     { name = "jupyterlite-core", specifier = ">=0.7.4" },
     { name = "jupyterlite-pyodide-kernel", specifier = ">=0.7.1" },
     { name = "notebook", specifier = ">=7.5.5" },
@@ -168,7 +172,7 @@ requires-dist = [
 
 [package.metadata.requires-dev]
 dev = [
-    { name = "cursor-notebook-mcp", specifier = ">=0.3.1" },
+    { name = "cursor-notebook-mcp", specifier = "==0.3.1" },
     { name = "pydantic", specifier = "==2.11.0" },
 ]
 
@@ -964,6 +968,15 @@ dependencies = [
 sdist = { url = "https://mirrors.aliyun.com/pypi/packages/ac/d5/730628e03fff2e8a8e8ccdaedde1489ab1309f9a4fa2536248884e30b7c7/jupyterlab-4.5.6.tar.gz", hash = "sha256:642fe2cfe7f0f5922a8a558ba7a0d246c7bc133b708dfe43f7b3a826d163cf42" }
 wheels = [
     { url = "https://mirrors.aliyun.com/pypi/packages/e1/1b/dad6fdcc658ed7af26fdf3841e7394072c9549a8b896c381ab49dd11e2d9/jupyterlab-4.5.6-py3-none-any.whl", hash = "sha256:d6b3dac883aa4d9993348e0f8e95b24624f75099aed64eab6a4351a9cdd1e580" },
+]
+
+[[package]]
+name = "jupyterlab-language-pack-zh-cn"
+version = "4.5.post3"
+source = { registry = "https://mirrors.aliyun.com/pypi/simple/" }
+sdist = { url = "https://mirrors.aliyun.com/pypi/packages/f8/82/4f9dc188ed4f6f308a28423dbe0cc36f7459e71dda67795138a715ef709d/jupyterlab_language_pack_zh_cn-4.5.post3.tar.gz", hash = "sha256:1fe0070c44c49c2ea15e4cd129a46c8359169a8ad04677891a64f3af73a63756" }
+wheels = [
+    { url = "https://mirrors.aliyun.com/pypi/packages/a9/6e/6fc9da7a86bd9815e2d912e0f0d69ae4130d5dcfdd699e86c193e1958d8b/jupyterlab_language_pack_zh_cn-4.5.post3-py2.py3-none-any.whl", hash = "sha256:47cdb0c41c6b066e795c867786c9c29fde527e2bf15aa6b3e9b2bab9929304b5" },
 ]
 
 [[package]]

@@ -1,0 +1,8 @@
+{
+    "@jupyterlab/notebook-extension:tracker": {
+        "autoStartDefaultKernel": true
+    },
+    "@jupyterlab/translation-extension:plugin": {
+        "locale": "zh_CN"
+    }
+}

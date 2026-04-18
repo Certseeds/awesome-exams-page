@@ -1,0 +1,16 @@
+{
+    "jupyter-lite-schema-version": 0,
+    "jupyter-config-data": {
+        "autoStartDefaultKernel": true,
+        "appName": "awesome-exams-jupyter",
+        "defaultKernelName": "python",
+        "disabledExtensions": [
+            "@jupyterlab/application-extension:logo",
+            "@jupyter/collaboration-extension",
+            "@jupyter/docprovider-extension"
+        ],
+        "enableServiceWorkerCache": true,
+        "locale": "zh_CN",
+        "showLoadingIndicator": true
+    }
+}

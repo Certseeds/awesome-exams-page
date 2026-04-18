@@ -518,3 +518,5 @@ $RECYCLE.BIN/
 .vitepress/dist
 .vitepress/cache
 *.docx
+*.doit.db
+jupyter
