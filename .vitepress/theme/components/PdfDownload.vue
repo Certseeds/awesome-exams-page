@@ -17,7 +17,7 @@ const { page } = useData()
 
 const showButton = computed(() => {
   const path = page.value.relativePath
-  return path?.includes('MA') && !path.includes('README')
+  return !path.includes('README')
 })
 
 const downloadPdf = () => {
