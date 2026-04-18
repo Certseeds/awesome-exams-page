@@ -127,7 +127,7 @@ $ pnpm --version
 
 ### AGPLv3.0+ LICENSE
 
-代码(主要是js文件)基于 AGPLv3.0+协议: 限制最强的主流开源协议
+代码(js文件, ipynb文件)基于 AGPLv3.0+协议: 限制最强的主流开源协议
 
 + 具体内容请看[`LICENSE_AGPL_V3_0.md`](/LICENSE_AGPL_V3_0.md)
 some code is based on this license
