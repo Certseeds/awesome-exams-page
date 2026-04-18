@@ -8,7 +8,7 @@ const hostURL = `https://certseeds.github.io/${repoName}/`
 export default defineConfig({
     title: "awesome-exams-page",
     description: "awesome sustech exams pages",
-    srcExclude: [],
+    srcExclude: ['jupyter/**'],
     base: `/${repoName}/`,
     themeConfig: {
         // https://vitepress.dev/reference/default-theme-config

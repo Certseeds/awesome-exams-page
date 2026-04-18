@@ -61,10 +61,8 @@ jobs:
         run: pnpm install
 
       - name: prepare env
-        run: |
-            uv python install 3.12
-            uv sync
-
+        working-directory: jupyter
+        run: pnpm jupyter:init
 
       - name: install texlive deps
         run: |
@@ -86,6 +84,9 @@ jobs:
 
       - name: build
         run: pnpm run docs:build
+      
+      - name: jupyter build
+        run: pnpm exec node ./.vitepress/run-jupyter.js
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3

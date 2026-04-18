@@ -9,11 +9,7 @@
         "docs:dev": "vitepress dev",
         "docs:build": "vitepress build",
         "docs:preview": "vitepress preview",
-        "jupyter:init": "uv sync --no-dev",
-        "jupyter:clean": "uv run python -c \"import shutil, os; [shutil.rmtree(p) if os.path.isdir(p) else os.remove(p) if os.path.exists(p) else None for p in ['./.jupyterlite.doit.db', './.vitepress/dist/jupyter']]\"",
-        "prejupyter:build": "uv run python -c \"import shutil, os; [shutil.rmtree(p) if os.path.isdir(p) else os.remove(p) if os.path.exists(p) else None for p in ['./.jupyterlite.doit.db', './.vitepress/dist/jupyter']]\"",
-        "jupyter:mcp": "uvx --with cursor-notebook-mcp==0.3.1 --with pydantic==2.11.0 cursor-notebook-mcp --transport streamable-http --allow-root %CD% --host 127.0.0.1 --port 32942",
-        "jupyter:build": "uv run jupyter lite build"
+        "jupyter:mcp": "uvx --with cursor-notebook-mcp==0.3.1 --with pydantic==2.11.0 cursor-notebook-mcp --transport streamable-http --allow-root %CD% --host 127.0.0.1 --port 32942"
     },
     "keywords": [
         "sustech",

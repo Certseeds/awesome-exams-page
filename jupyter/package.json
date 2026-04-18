@@ -1,0 +1,12 @@
+{
+    "name": "awesome-exams-page-jupyter-stage",
+    "private": true,
+    "type": "module",
+    "scripts": {
+        "prejupyter:init": "uv python install 3.12",
+        "jupyter:init": "uv sync --no-dev",
+        "jupyter:clean": "uv run python -c \"import shutil, os; [shutil.rmtree(p) if os.path.isdir(p) else os.remove(p) if os.path.exists(p) else None for p in ['./.jupyterlite.doit.db', './.vitepress/dist/jupyter']]\"",
+        "prejupyter:build": "uv run python -c \"import shutil, os; [shutil.rmtree(p) if os.path.isdir(p) else os.remove(p) if os.path.exists(p) else None for p in ['./.jupyterlite.doit.db', './.vitepress/dist/jupyter']]\"",
+        "jupyter:build": "uv run jupyter lite build"
+    }
+}

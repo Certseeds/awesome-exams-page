@@ -8,11 +8,21 @@
             "notebooks"
         ],
         "lite_dir": ".",
-        "contents": [],
-        "output_dir": "./.vitepress/dist/jupyter",
+        "contents": [
+            "."
+        ],
+        "output_dir": "./dist",
         "base_url": "/jupyter/",
+        "ignore_contents": [
+            "\\.venv",
+            "dist"
+        ],
         "extra_ignore_contents": [
-            "\\.md$"
+            "\\.md$",
+            "\\.pdf$",
+            "\\.png$",
+            "\\.venv",
+            "dist"
         ],
         "no_sourcemaps": true,
         "no_unused_shared_packages": true
