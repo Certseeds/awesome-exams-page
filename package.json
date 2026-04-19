@@ -9,7 +9,8 @@
         "docs:dev": "vitepress dev",
         "docs:build": "vitepress build",
         "docs:preview": "vitepress preview",
-        "jupyter:mcp": "uvx --with cursor-notebook-mcp==0.3.1 --with pydantic==2.11.0 cursor-notebook-mcp --transport streamable-http --allow-root %CD% --host 127.0.0.1 --port 32942"
+        "jupyter:mcp": "uvx --with cursor-notebook-mcp==0.3.1 --with pydantic==2.11.0 cursor-notebook-mcp --transport streamable-http --allow-root %CD% --host 127.0.0.1 --port 32942",
+        "jupyter:build": "node ./.vitepress/run-jupyter.js"
     },
     "keywords": [
         "sustech",
