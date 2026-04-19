@@ -1,0 +1,12 @@
+{
+  "hooks": {
+    "Stop": [
+      {
+        "type": "command",
+        "command": "uv run python .vitepress/clean-ipynb.py",
+        "windows": "uv run python .vitepress\\clean-ipynb.py",
+        "timeout": 30
+      }
+    ]
+  }
+}
