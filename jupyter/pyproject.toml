@@ -17,6 +17,10 @@ dependencies = [
 [dependency-groups]
 dev = [
     "cursor-notebook-mcp==0.3.1",
-    "pydantic==2.11.0", # cursor-notebook-mcp do not work with pydantic 2.12.0+
+    "pydantic==2.11.7", # cursor-notebook-mcp do not work with pydantic 2.12.0+
 ]
 
+[tool.uv]
+override-dependencies = [
+    "fastmcp>=3.2.0",
+]
