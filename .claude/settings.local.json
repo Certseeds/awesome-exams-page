@@ -1,0 +1,9 @@
+{
+  "mcpServers": {
+    "jupyter": {
+      "_comment": "常驻服务，需先执行 pnpm run jupyter:mcp 启动, Claude 启动时自动连接",
+      "url": "http://127.0.0.1:32942",
+      "description": "cursor-notebook-mcp - Jupyter notebook 读写 MCP 服务"
+    }
+  }
+}

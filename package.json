@@ -9,7 +9,7 @@
         "docs:dev": "vitepress dev",
         "docs:build": "vitepress build",
         "docs:preview": "vitepress preview",
-        "jupyter:mcp": "uv --directory jupyter run --group dev cursor-notebook-mcp --transport streamable-http --allow-root %CD% --host 127.0.0.1 --port 32942",
+        "jupyter:mcp": "uv --directory jupyter run --group dev cursor-notebook-mcp --transport streamable-http --allow-root . --host 127.0.0.1 --port 32942",
         "jupyter:build": "node ./.vitepress/run-jupyter.js"
     },
     "keywords": [
