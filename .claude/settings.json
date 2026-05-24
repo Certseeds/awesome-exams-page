@@ -1,0 +1,9 @@
+{
+    "mcpServers": {
+        "jupyter": {
+            "type": "url",
+            "url": "http://127.0.0.1:32942",
+            "description": "cursor-notebook-mcp - Jupyter notebook 读写 MCP 服务"
+        }
+    }
+}

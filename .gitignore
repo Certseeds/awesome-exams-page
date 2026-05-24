@@ -520,3 +520,6 @@ $RECYCLE.BIN/
 *.docx
 *.doit.db
 jupyter
+.pnpm-store
+pnpm-workspace.yaml
+*.exec.sh
