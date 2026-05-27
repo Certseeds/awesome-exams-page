@@ -18,14 +18,66 @@ importers:
         specifier: ^3.5.34
         version: 3.5.34
     devDependencies:
+      '@anthropic-ai/claude-code':
+        specifier: ^2.1.145
+        version: 2.1.145
       markdown-it-footnote:
         specifier: ^4.0.0
         version: 4.0.0
       vitepress:
         specifier: 2.0.0-alpha.17
-        version: 2.0.0-alpha.17(@types/node@22.14.1)(markdown-it-mathjax3@4.3.2)(postcss@8.5.14)(terser@5.39.0)
+        version: 2.0.0-alpha.17(markdown-it-mathjax3@4.3.2)(postcss@8.5.14)
 
 packages:
+
+  '@anthropic-ai/claude-code-darwin-arm64@2.1.145':
+    resolution: {integrity: sha512-nY4mqeGqqHOdRDM8XIKfakaKFu/t9EbwYGE8Tx+f/MxuzblSH1iD54TfQuq2cbTqUSaqEqiHkGM2jxoZxPcTEQ==}
+    cpu: [arm64]
+    os: [darwin]
+
+  '@anthropic-ai/claude-code-darwin-x64@2.1.145':
+    resolution: {integrity: sha512-fQxZMafJ8wEixJLQMFn/1c6usMT/KMnpZukOW/j5hfFNLq4gwNL1sZFBgvJ6+RCMB3r3Yz1HBzP/JBERxeS28Q==}
+    cpu: [x64]
+    os: [darwin]
+
+  '@anthropic-ai/claude-code-linux-arm64-musl@2.1.145':
+    resolution: {integrity: sha512-1PAtE0OhoVXWOiexBBZT8iEVnz2r7V+VxXJysNqa3IMq5zpDmENRH+RoC2KoBcAKVRRsj6DT7A8i7q3ofxz+Lw==}
+    cpu: [arm64]
+    os: [linux]
+    libc: [musl]
+
+  '@anthropic-ai/claude-code-linux-arm64@2.1.145':
+    resolution: {integrity: sha512-tgJZ5jCCCqS87E3a1ElnkvKCEzC71WPwKzdmwUeokqP2mj6M+JEz66stuyN3ru2MCe83svcxKSU+oNaALV+uRQ==}
+    cpu: [arm64]
+    os: [linux]
+    libc: [glibc]
+
+  '@anthropic-ai/claude-code-linux-x64-musl@2.1.145':
+    resolution: {integrity: sha512-32hYOnNWnP41yfw6aRwKKXrdN9eFXrLXNvxSDkFNSebhL9ynvYB7astmK4QP9ZJrX/fmbHVNnCUcqfXmYv5rHw==}
+    cpu: [x64]
+    os: [linux]
+    libc: [musl]
+
+  '@anthropic-ai/claude-code-linux-x64@2.1.145':
+    resolution: {integrity: sha512-bLuRixDBBFHofpfPvf11yp+VxQ4iDTohrCS3EkEsEiQ4YRmCwxeEIZDtdzhiPTVsRsHvsdByKOfBrQC677p9zQ==}
+    cpu: [x64]
+    os: [linux]
+    libc: [glibc]
+
+  '@anthropic-ai/claude-code-win32-arm64@2.1.145':
+    resolution: {integrity: sha512-CWEwrQiuQty3vfASbOgXWr/WTLQdzWWu8La9WLOUy8ELAuRzVocSx+fpl0yfRLsl6CYg8avtYn07EBVYV3gbMQ==}
+    cpu: [arm64]
+    os: [win32]
+
+  '@anthropic-ai/claude-code-win32-x64@2.1.145':
+    resolution: {integrity: sha512-k+nBQWKfN9yQDvkUwsHPDato9aSsR3nBP65ufUCfmsh0xiaczhSCd0UtdpbhFfgwMZeZIdui2q2ynI81seXtGw==}
+    cpu: [x64]
+    os: [win32]
+
+  '@anthropic-ai/claude-code@2.1.145':
+    resolution: {integrity: sha512-SPZBgJDfDjbUbDg0wF+DTtuZ0TqcpCVeo3tOGDcMoCV94FttFOgPWzTpMRD6vTpu7P98kXkUrmpysDO9K/dAyg==}
+    engines: {node: '>=18.0.0'}
+    hasBin: true
 
   '@babel/helper-string-parser@7.27.1':
     resolution: {integrity: sha512-qMlSxKbpRlAridDExk92nSobyDdpPijUq2DW6oDnUqd0iOGxmQjyqhMIihI9+zv4LPyZdRje2cavWPbCbWm3eA==}
@@ -215,21 +267,8 @@ packages:
   '@iconify/types@2.0.0':
     resolution: {integrity: sha512-+wluvCrRhXrhyOmRDJ3q8mux9JkKy5SJ/v8ol2tu4FVjyYvtEzkc/3pK15ET6RKg4b4w4BmTk1+gsCUhf21Ykg==}
 
-  '@jridgewell/gen-mapping@0.3.13':
-    resolution: {integrity: sha512-2kkt/7niJ6MgEPxF0bYdQ6etZaA+fQvDcLKckhy1yIQOzaoKjBBjSj63/aLVjYE3qhRt5dvM+uUyfCg6UKCBbA==}
-
-  '@jridgewell/resolve-uri@3.1.2':
-    resolution: {integrity: sha512-bRISgCIjP20/tbWSPWMEi54QVPRZExkuD9lJL+UIxUKtwVJA8wW1Trb1jMs1RFXo1CBTNZ/5hpC9QvmKWdopKw==}
-    engines: {node: '>=6.0.0'}
-
-  '@jridgewell/source-map@0.3.11':
-    resolution: {integrity: sha512-ZMp1V8ZFcPG5dIWnQLr3NSI1MiCU7UETdS/A0G8V/XWHvJv3ZsFqutJn1Y5RPmAPX6F3BiE397OqveU/9NCuIA==}
-
   '@jridgewell/sourcemap-codec@1.5.5':
     resolution: {integrity: sha512-cYQ9310grqxueWbl+WuIUIaiUaDcj7WOq5fVhEljNVgRfOUhY9fy2zTvfoqWsnebh8Sl70VScFbICvJnLKB0Og==}
-
-  '@jridgewell/trace-mapping@0.3.31':
-    resolution: {integrity: sha512-zzNR+SdQSDJzc8joaeP8QQoCQr8NuYx2dIIytl1QeBEZHJ9uW6hebsrYgbz8hJwUQao3TWCMtmfV8Nu1twOLAw==}
 
   '@rolldown/pluginutils@1.0.0-rc.13':
     resolution: {integrity: sha512-3ngTAv6F/Py35BsYbeeLeecvhMKdsKm4AoOETVhAA+Qc8nrA2I0kF7oa93mE9qnIurngOSpMnQ0x2nQY2FPviA==}
@@ -414,9 +453,6 @@ packages:
   '@types/mdurl@2.0.0':
     resolution: {integrity: sha512-RGdgjQUZba5p6QEFAVx2OGb8rQDL/cPRG7GiedRzMcJ1tYnUANBncjbSB1NRGwbvjcPeikRABz2nshyPk1bhWg==}
 
-  '@types/node@22.14.1':
-    resolution: {integrity: sha512-u0HuPQwe/dHrItgHHpmw3N2fYCR6x4ivMNbPHRkBVP4CvN+kiRrKHWk3i8tXiO/joPwXLMYvF9TTF0eqgHIuOw==}
-
   '@types/unist@3.0.3':
     resolution: {integrity: sha512-ko/gIFJRv177XgZsZcBwnqJN5x/Gien8qNOn0D5bQU/zAzVf9Zt3BlcUiLqhV9y4ARk0GbT3tnUiPNgnTXzc/Q==}
 
@@ -530,11 +566,6 @@ packages:
     resolution: {integrity: sha512-A9gOqLdi6cV4ibazAjcQufGj0B1y/vDqYrcuP6d/6x8P27gRS8643Dj9o1dEKtB6O7fwxb2FgBmJS2mX7gpvdw==}
     engines: {node: '>=14.6'}
 
-  acorn@8.16.0:
-    resolution: {integrity: sha512-UVJyE9MttOsBQIDKw1skb9nAwQuR5wuGD3+82K6JgJlm/Y+KI92oNsMNGZCYdDsVtRHSak0pcV5Dno5+4jh9sw==}
-    engines: {node: '>=0.4.0'}
-    hasBin: true
-
   ansi-colors@4.1.3:
     resolution: {integrity: sha512-/6w/C21Pm1A7aZitlI5Ni/2J6FFQN8i1Cvz3kHABAAbw93v/NlvKdVOqz7CCWz/3iv/JplRSEEZ83XION15ovw==}
     engines: {node: '>=6'}
@@ -544,9 +575,6 @@ packages:
 
   boolbase@1.0.0:
     resolution: {integrity: sha512-JZOSA7Mo9sNGB8+UjSgzdLtokWAky1zbztM3WRLCbZ70/3cTANmQmOdR7y2g+J0e2WXywy1yS468tY+IruqEww==}
-
-  buffer-from@1.1.2:
-    resolution: {integrity: sha512-E+XQCRwSbaaiChtv6k6Dwgc+bx+Bs6vuKJHHl5kox/BaKbhiXzqQOwK4cO22yElGp2OCmjwVhT3HmxgyPGnJfQ==}
 
   ccount@2.0.1:
     resolution: {integrity: sha512-eyrF0jiFpY+3drT6383f1qhkbGsLSifNAjA61IUjZjmLCWjItY6LB9ft9YhoDgwfmclB2zhu51Lc7+95b8NRAg==}
@@ -570,9 +598,6 @@ packages:
   commander@13.1.0:
     resolution: {integrity: sha512-/rFeCpNJQbhSZjGVwO9RFV3xPqbnERS8MmIQzCtD/zl6gpJuV/bMLuN92oG3F7d8oDEHHRrujSXNUr8fpjntKw==}
     engines: {node: '>=18'}
-
-  commander@2.20.3:
-    resolution: {integrity: sha512-GpVkmM8vF2vQUkj2LvZmD35JxeJOLCwJ9cUkugyk2nuhbv3+mJvpLYYt+0+USMxE+oj+ey/lJEnhZw75x/OMcQ==}
 
   commander@6.2.1:
     resolution: {integrity: sha512-U7VdrJFnJgo4xjrHpTzu0yrHPGImdsmD95ZlgYSEajAn2JKzDhDTPG9kBTefmObL2w/ngeZnilk+OV9CG3d7UA==}
@@ -799,13 +824,6 @@ packages:
     resolution: {integrity: sha512-UXWMKhLOwVKb728IUtQPXxfYU+usdybtUrK/8uGE8CQMvrhOpwvzDBwj0QhSL7MQc7vIsISBG8VQ8+IDQxpfQA==}
     engines: {node: '>=0.10.0'}
 
-  source-map-support@0.5.21:
-    resolution: {integrity: sha512-uBHU3L3czsIyYXKX88fdrGovxdSCoTGDRZ6SYXtSRxLZUzHg5P/66Ht6uoUlHu9EZod+inXhKo3qQgwXUT/y1w==}
-
-  source-map@0.6.1:
-    resolution: {integrity: sha512-UjgapumWlbMhkBgzT7Ykc5YXUT46F0iKu8SGXq0bcwP5dz/h0Plj6enJqjz1Zbq2l5WaqYnrVbwWOWMyF3F47g==}
-    engines: {node: '>=0.10.0'}
-
   space-separated-tokens@2.0.2:
     resolution: {integrity: sha512-PEGlAwrG8yXGXRjW32fGbg66JAlOAwbObuqVoJpv/mRgoWDQfgH1wDPvtzWyUSNAXBGSk8h755YDbbcEy3SH2Q==}
 
@@ -819,11 +837,6 @@ packages:
   tabbable@6.4.0:
     resolution: {integrity: sha512-05PUHKSNE8ou2dwIxTngl4EzcnsCDZGJ/iCLtDflR/SHB/ny14rXc+qU5P4mG9JkusiV7EivzY9Mhm55AzAvCg==}
 
-  terser@5.39.0:
-    resolution: {integrity: sha512-LBAhFyLho16harJoWMg/nZsQYgTrg5jXOn2nCYjRUcZZEdE3qa2zb8QEDRUGVZBW4rlazf2fxkg8tztybTaqWw==}
-    engines: {node: '>=10'}
-    hasBin: true
-
   tinyglobby@0.2.16:
     resolution: {integrity: sha512-pn99VhoACYR8nFHhxqix+uvsbXineAasWm5ojXoN8xEwK5Kd3/TrhNn1wByuD52UxWRLy8pu+kRMniEi6Eq9Zg==}
     engines: {node: '>=12.0.0'}
@@ -836,9 +849,6 @@ packages:
 
   tslib@2.8.1:
     resolution: {integrity: sha512-oJFu94HQb+KVduSUQL7wnpmqnfmLsOA/nAh6b6EH0wCEoK0/mPeXU6c3wKDV83MkOuHPRHtSXKKU99IBazS/2w==}
-
-  undici-types@6.21.0:
-    resolution: {integrity: sha512-iwDZqg0QAGrg9Rav5H4n0M64c3mkR59cJ6wQp+7C4nI0gsmExaedaYLNO44eT4AtBBwjbTiGPMlt2Md0T9H9JQ==}
 
   unist-util-is@6.0.1:
     resolution: {integrity: sha512-LsiILbtBETkDz8I9p1dQ0uyRUWuaQzd/cuEeS1hoRSyW5E5XGmTzlwY1OrNzzakGowI9Dr/I8HVaw4hTtnxy8g==}
@@ -949,6 +959,41 @@ packages:
 
 snapshots:
 
+  '@anthropic-ai/claude-code-darwin-arm64@2.1.145':
+    optional: true
+
+  '@anthropic-ai/claude-code-darwin-x64@2.1.145':
+    optional: true
+
+  '@anthropic-ai/claude-code-linux-arm64-musl@2.1.145':
+    optional: true
+
+  '@anthropic-ai/claude-code-linux-arm64@2.1.145':
+    optional: true
+
+  '@anthropic-ai/claude-code-linux-x64-musl@2.1.145':
+    optional: true
+
+  '@anthropic-ai/claude-code-linux-x64@2.1.145':
+    optional: true
+
+  '@anthropic-ai/claude-code-win32-arm64@2.1.145':
+    optional: true
+
+  '@anthropic-ai/claude-code-win32-x64@2.1.145':
+    optional: true
+
+  '@anthropic-ai/claude-code@2.1.145':
+    optionalDependencies:
+      '@anthropic-ai/claude-code-darwin-arm64': 2.1.145
+      '@anthropic-ai/claude-code-darwin-x64': 2.1.145
+      '@anthropic-ai/claude-code-linux-arm64': 2.1.145
+      '@anthropic-ai/claude-code-linux-arm64-musl': 2.1.145
+      '@anthropic-ai/claude-code-linux-x64': 2.1.145
+      '@anthropic-ai/claude-code-linux-x64-musl': 2.1.145
+      '@anthropic-ai/claude-code-win32-arm64': 2.1.145
+      '@anthropic-ai/claude-code-win32-x64': 2.1.145
+
   '@babel/helper-string-parser@7.27.1': {}
 
   '@babel/helper-validator-identifier@7.28.5': {}
@@ -1052,28 +1097,7 @@ snapshots:
 
   '@iconify/types@2.0.0': {}
 
-  '@jridgewell/gen-mapping@0.3.13':
-    dependencies:
-      '@jridgewell/sourcemap-codec': 1.5.5
-      '@jridgewell/trace-mapping': 0.3.31
-    optional: true
-
-  '@jridgewell/resolve-uri@3.1.2':
-    optional: true
-
-  '@jridgewell/source-map@0.3.11':
-    dependencies:
-      '@jridgewell/gen-mapping': 0.3.13
-      '@jridgewell/trace-mapping': 0.3.31
-    optional: true
-
   '@jridgewell/sourcemap-codec@1.5.5': {}
-
-  '@jridgewell/trace-mapping@0.3.31':
-    dependencies:
-      '@jridgewell/resolve-uri': 3.1.2
-      '@jridgewell/sourcemap-codec': 1.5.5
-    optional: true
 
   '@rolldown/pluginutils@1.0.0-rc.13': {}
 
@@ -1209,21 +1233,16 @@ snapshots:
 
   '@types/mdurl@2.0.0': {}
 
-  '@types/node@22.14.1':
-    dependencies:
-      undici-types: 6.21.0
-    optional: true
-
   '@types/unist@3.0.3': {}
 
   '@types/web-bluetooth@0.0.21': {}
 
   '@ungap/structured-clone@1.3.1': {}
 
-  '@vitejs/plugin-vue@6.0.6(vite@7.3.3(@types/node@22.14.1)(terser@5.39.0))(vue@3.5.34)':
+  '@vitejs/plugin-vue@6.0.6(vite@7.3.3)(vue@3.5.34)':
     dependencies:
       '@rolldown/pluginutils': 1.0.0-rc.13
-      vite: 7.3.3(@types/node@22.14.1)(terser@5.39.0)
+      vite: 7.3.3
       vue: 3.5.34
 
   '@vue/compiler-core@3.5.34':
@@ -1316,17 +1335,11 @@ snapshots:
 
   '@xmldom/xmldom@0.9.10': {}
 
-  acorn@8.16.0:
-    optional: true
-
   ansi-colors@4.1.3: {}
 
   birpc@2.9.0: {}
 
   boolbase@1.0.0: {}
-
-  buffer-from@1.1.2:
-    optional: true
 
   ccount@2.0.1: {}
 
@@ -1355,9 +1368,6 @@ snapshots:
   comma-separated-tokens@2.0.3: {}
 
   commander@13.1.0: {}
-
-  commander@2.20.3:
-    optional: true
 
   commander@6.2.1: {}
 
@@ -1654,15 +1664,6 @@ snapshots:
 
   source-map-js@1.2.1: {}
 
-  source-map-support@0.5.21:
-    dependencies:
-      buffer-from: 1.1.2
-      source-map: 0.6.1
-    optional: true
-
-  source-map@0.6.1:
-    optional: true
-
   space-separated-tokens@2.0.2: {}
 
   speech-rule-engine@4.1.4:
@@ -1678,14 +1679,6 @@ snapshots:
 
   tabbable@6.4.0: {}
 
-  terser@5.39.0:
-    dependencies:
-      '@jridgewell/source-map': 0.3.11
-      acorn: 8.16.0
-      commander: 2.20.3
-      source-map-support: 0.5.21
-    optional: true
-
   tinyglobby@0.2.16:
     dependencies:
       fdir: 6.5.0(picomatch@4.0.4)
@@ -1696,9 +1689,6 @@ snapshots:
   trim-lines@3.0.1: {}
 
   tslib@2.8.1: {}
-
-  undici-types@6.21.0:
-    optional: true
 
   unist-util-is@6.0.1:
     dependencies:
@@ -1739,7 +1729,7 @@ snapshots:
       '@types/unist': 3.0.3
       vfile-message: 4.0.3
 
-  vite@7.3.3(@types/node@22.14.1)(terser@5.39.0):
+  vite@7.3.3:
     dependencies:
       esbuild: 0.27.7
       fdir: 6.5.0(picomatch@4.0.4)
@@ -1748,11 +1738,9 @@ snapshots:
       rollup: 4.60.3
       tinyglobby: 0.2.16
     optionalDependencies:
-      '@types/node': 22.14.1
       fsevents: 2.3.3
-      terser: 5.39.0
 
-  vitepress@2.0.0-alpha.17(@types/node@22.14.1)(markdown-it-mathjax3@4.3.2)(postcss@8.5.14)(terser@5.39.0):
+  vitepress@2.0.0-alpha.17(markdown-it-mathjax3@4.3.2)(postcss@8.5.14):
     dependencies:
       '@docsearch/css': 4.6.3
       '@docsearch/js': 4.6.3
@@ -1762,7 +1750,7 @@ snapshots:
       '@shikijs/transformers': 3.23.0
       '@shikijs/types': 3.23.0
       '@types/markdown-it': 14.1.2
-      '@vitejs/plugin-vue': 6.0.6(vite@7.3.3(@types/node@22.14.1)(terser@5.39.0))(vue@3.5.34)
+      '@vitejs/plugin-vue': 6.0.6(vite@7.3.3)(vue@3.5.34)
       '@vue/devtools-api': 8.1.2
       '@vue/shared': 3.5.34
       '@vueuse/core': 14.3.0(vue@3.5.34)
@@ -1771,7 +1759,7 @@ snapshots:
       mark.js: 8.11.1
       minisearch: 7.2.0
       shiki: 3.23.0
-      vite: 7.3.3(@types/node@22.14.1)(terser@5.39.0)
+      vite: 7.3.3
       vue: 3.5.34
     optionalDependencies:
       markdown-it-mathjax3: 4.3.2

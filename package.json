@@ -9,7 +9,7 @@
         "docs:dev": "vitepress dev",
         "docs:build": "vitepress build",
         "docs:preview": "vitepress preview",
-        "jupyter:mcp": "uv --directory jupyter run --group dev cursor-notebook-mcp --transport streamable-http --allow-root . --host 127.0.0.1 --port 32942",
+        "jupyter:mcp": "uv --directory jupyter run --group dev cursor-notebook-mcp --transport streamable-http --allow-root $(pwd) --host 127.0.0.1 --port 32942",
         "jupyter:build": "node ./.vitepress/run-jupyter.js"
     },
     "keywords": [
@@ -29,6 +29,7 @@
         "vue": "^3.5.34"
     },
     "devDependencies": {
+        "@anthropic-ai/claude-code": "^2.1.145",
         "markdown-it-footnote": "^4.0.0",
         "vitepress": "2.0.0-alpha.17"
     }

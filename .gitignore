@@ -521,5 +521,4 @@ $RECYCLE.BIN/
 *.doit.db
 jupyter
 .pnpm-store
-pnpm-workspace.yaml
 *.exec.sh
