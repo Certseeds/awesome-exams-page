@@ -1,0 +1,17 @@
+cff-version: 1.2.0
+message: "If you use this repository or its curated exam materials, please cite it as below."
+type: dataset
+title: "awesome-exams-page"
+version: "0.0.1"
+authors:
+  - family-names: "Certseeds"
+  - family-names: "NikeTacoHub"
+abstract: "A curated repository of SUSTech exam materials in Markdown and Jupyter notebook form, published as a VitePress-based static site."
+repository-code: "https://github.com/Certseeds/awesome-exams-page"
+url: "https://github.com/Certseeds/awesome-exams-page"
+keywords:
+  - "SUSTech"
+  - "exam archive"
+  - "dataset"
+  - "Markdown"
+  - "Jupyter"

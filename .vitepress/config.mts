@@ -15,6 +15,7 @@ export default defineConfig({
         nav: [
             { text: 'Home', link: '/' },
             { text: '编辑器', link: '/editor' },
+            { text: '引用', link: '/citation' },
         ],
         sidebar: [
             {
