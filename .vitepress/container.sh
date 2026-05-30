@@ -1,0 +1,30 @@
+#!/usr/bin/env bash
+set -euox pipefail
+main() {
+    local SOURCE="ghcr.io"
+    local GH_USERNAME="certseeds"
+    local IMAGE_NAME="develop"
+    local RUNTIME_NAME="exmas-page-dev"
+    local dotfiles="${DOTFILES_DIR}"
+    podman run \
+        --userns=keep-id:uid=1001  \
+        -dit \
+        -e HTTP_PROXY="" \
+        -e HTTPS_PROXY="" \
+        -e http_proxy="" \
+        -e https_proxy="" \
+        --name "${RUNTIME_NAME}" \
+        -v "${dotfiles}"/lang/hosts.conf:/etc/hosts \
+        -v $(pwd):/home/${USERNAME}/repo/awesome-exams-page \
+        -v awesome-exams-node-modules:/home/${USERNAME}/repo/awesome-exams-page/node_modules \
+        -v awesome-exams-vitepress:/home/${USERNAME}/repo/awesome-exams-page/.vitepress \
+        -v awesome-exams-claude:/home/${USERNAME}/.claude/ \
+        "${SOURCE}/${GH_USERNAME}/${IMAGE_NAME}:latest"
+    podman cp "${dotfiles}"/lang/agents/cc.json "${RUNTIME_NAME}":/home/${USERNAME}/.claude/settings.json
+
+    # run pnpm setup
+    # vim the claude code settings.json, to enable allow-dangerous tasks
+    # openclaw main using qwen3.5-plus
+    # cc using glm-5
+}
+main
