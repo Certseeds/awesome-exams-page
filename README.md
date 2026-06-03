@@ -12,13 +12,12 @@
 
 ## 科目
 
-+ [CS203-数据机构与算法分析](/CS203-数据结构与算法分析/README.md)
++ [CS203-数据结构与算法分析](/CS203-数据结构与算法分析/README.md)
 
 + [MA101a-数学分析I](/MA101a-数学分析I/README.md)
 + [MA102a-数学分析II](/MA102a-数学分析II/README.md)
 + [MA103-线性代数](/MA103-线性代数/README.md)
 + [MA107-高等代数I](/MA107-高等代数I/README.md)
-+ [MA111-高等代数II](/MA107-高等代数I/README.md)
 + [MA111-高等代数II](/MA111-高等代数II/README.md)
 + [MA117-高等数学I](/MA117-高等数学I/README.md)
 + [MA127-高等数学II](/MA127-高等数学II/README.md)
