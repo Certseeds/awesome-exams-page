@@ -4,7 +4,7 @@ main() {
     local SOURCE="ghcr.io"
     local GH_USERNAME="certseeds"
     local IMAGE_NAME="develop"
-    local RUNTIME_NAME="exmas-page-dev"
+    local RUNTIME_NAME="exams-page-dev"
     local dotfiles="${DOTFILES_DIR}"
     # 请确认环境内存在 USERNAME, DOTFILES_DIR 这两个变量
     # 请确认环境内指定路径上有 cc 的配置文件
