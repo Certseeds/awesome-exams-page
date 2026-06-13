@@ -19,7 +19,11 @@ main() {
         -v "${dotfiles}"/lang/hosts.conf:/etc/hosts \
         -v $(pwd):/home/${USERNAME}/repo/awesome-exams-page \
         -v awesome-exams-node-modules:/home/${USERNAME}/repo/awesome-exams-page/node_modules \
-        -v awesome-exams-vitepress:/home/${USERNAME}/repo/awesome-exams-page/.vitepress \
+        -v awesome-exams-vitepress-cache:/home/${USERNAME}/repo/awesome-exams-page/.vitepress/cache \
+        -v awesome-exams-vitepress-dist:/home/${USERNAME}/repo/awesome-exams-page/.vitepress/dist \
+        -v awesome-exams-venv:/home/${USERNAME}/repo/awesome-exams-page/.venv \
+        -v awesome-exams-jupyter-venv:/home/${USERNAME}/repo/awesome-exams-page/jupyter/.venv \
+        -v awesome-exams-pnpm:/home/${USERNAME}/repo/awesome-exams-page/.pnpm-store \
         -v awesome-exams-claude:/home/${USERNAME}/.claude/ \
         "${SOURCE}/${GH_USERNAME}/${IMAGE_NAME}:latest"
     podman cp "${dotfiles}"/lang/agents/cc.json "${RUNTIME_NAME}":/home/${USERNAME}/.claude/settings.json
