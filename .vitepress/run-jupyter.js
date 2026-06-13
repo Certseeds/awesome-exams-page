@@ -73,7 +73,7 @@ async function assertDirectoriesExist(directories) {
 }
 
 async function clearStageDirectories() {
-    await fs.rm(path.join(stageDir, 'jupyter', '.jupyterlite.doit.db'), { force: true }).catch(() => { });
+    await fs.rm(path.join(stageDir, '.jupyterlite.doit.db'), { force: true }).catch(() => { });
 }
 
 async function copyCourseDirectories(directories) {

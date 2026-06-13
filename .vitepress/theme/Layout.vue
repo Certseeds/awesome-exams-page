@@ -12,17 +12,21 @@
   </Layout>
 </template>
 
-<script setup>
-import { computed } from 'vue'
+<script setup lang="ts">
+import { computed, onMounted, onUnmounted } from 'vue'
 import { useData } from 'vitepress'
 import DefaultTheme from 'vitepress/theme'
 import PdfDownload from './components/PdfDownload.vue'
 import JupyterLink from './components/JupyterLink.vue'
+import { initCopyTex, destroyCopyTex } from './copy-right-katex'
 
 const { Layout } = DefaultTheme
-const { page, frontmatter } = useData()
+const { frontmatter } = useData()
 
 const showJupyter = computed(() => frontmatter.value?.['has-jupyter'] === true)
+
+onMounted(initCopyTex)
+onUnmounted(destroyCopyTex)
 </script>
 
 <style>

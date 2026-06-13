@@ -1,2 +1,5 @@
 CS*
 MA*
+.venv
+dist
+*.db

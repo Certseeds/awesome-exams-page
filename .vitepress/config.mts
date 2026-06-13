@@ -1,5 +1,6 @@
 import { defineConfig } from 'vitepress'
-import mdFootnote from "markdown-it-footnote";
+import { footnote }  from "@mdit/plugin-footnote";
+import { katex } from "@mdit/plugin-katex";
 
 const repoName = 'awesome-exams-page';
 const hostURL = `https://certseeds.github.io/${repoName}/`
@@ -84,23 +85,14 @@ export default defineConfig({
     ],
     markdown: {
         config: (md) => {
-            md.use(mdFootnote)
+            md.use(footnote)
+              .use(katex)
         },
-        math: true
     },
     sitemap: {
         hostname: hostURL
     },
     lastUpdated: true,
     metaChunk: true,
-    vite: {
-        ssr: {
-            // 避免在SSR期间尝试导入Vditor
-            noExternal: ['vditor']
-        },
-        // 避免CSS代码分割, 确保Vditor样式可用
-        build: {
-            cssCodeSplit: false
-        }
-    }
+    vite: {}
 })

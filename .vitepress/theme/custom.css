@@ -1,5 +1,10 @@
 /* 自定义样式 */
 
+/* KaTeX copy-paste fix: prevent line breaks when selecting/copying math */
+.katex .katex-html {
+  white-space: nowrap;
+}
+
 /* PDF下载按钮的额外样式 */
 .VPContent .pdf-download-container {
   position: sticky;

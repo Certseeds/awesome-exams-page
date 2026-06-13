@@ -519,6 +519,5 @@ $RECYCLE.BIN/
 .vitepress/cache
 *.docx
 *.doit.db
-jupyter
 .pnpm-store
 *.exec.sh

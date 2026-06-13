@@ -2,6 +2,7 @@ import DefaultTheme from 'vitepress/theme'
 import Layout from './Layout.vue'
 import PdfDownload from './components/PdfDownload.vue'
 import './custom.css'
+import 'katex/dist/katex.min.css'
 
 export default {
   extends: DefaultTheme,
