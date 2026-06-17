@@ -1,3 +1,6 @@
 allowBuilds:
   '@anthropic-ai/claude-code': true
   esbuild: false
+
+overrides:
+  vite: ^8.0.16

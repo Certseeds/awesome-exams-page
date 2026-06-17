@@ -5,12 +5,12 @@ description = "Add your description here"
 readme = "README.md"
 requires-python = ">=3.12"
 dependencies = [
-    "jupyterlab>=4.5.7",
+    "jupyterlab>=4.5.8",
     "jupyterlab-language-pack-zh-cn>=4.5.post3",
     "jupyterlab-server>=2.28.0",
     "jupyterlite-core>=0.7.6",
     "jupyterlite-pyodide-kernel>=0.7.2",
-    "notebook>=7.5.6",
+    "notebook>=7.5.7",
 ]
 
 # do not install them to the lib, it will import dirty extensions into dist
