@@ -31,7 +31,7 @@ importers:
         specifier: ^0.135.0
         version: 0.135.0
       vite:
-        specifier: ^8.1.4
+        specifier: ^8.0.16
         version: 8.1.4
       vitepress:
         specifier: 2.0.0-alpha.17
