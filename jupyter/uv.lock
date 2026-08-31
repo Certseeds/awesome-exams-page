@@ -171,12 +171,12 @@ dev = [
 
 [package.metadata]
 requires-dist = [
-    { name = "jupyterlab", specifier = ">=4.6.2" },
+    { name = "jupyterlab", specifier = ">=4.6.3" },
     { name = "jupyterlab-language-pack-zh-cn", specifier = ">=4.5.post3" },
     { name = "jupyterlab-server", specifier = ">=2.28.0" },
-    { name = "jupyterlite-core", specifier = ">=0.8.1" },
-    { name = "jupyterlite-pyodide-kernel", specifier = ">=0.8.2" },
-    { name = "notebook", specifier = ">=7.6.1" },
+    { name = "jupyterlite-core", specifier = ">=0.8.3" },
+    { name = "jupyterlite-pyodide-kernel", specifier = ">=0.8.5" },
+    { name = "notebook", specifier = ">=7.6.2" },
 ]
 
 [package.metadata.requires-dev]
@@ -1204,7 +1204,7 @@ wheels = [
 
 [[package]]
 name = "jupyterlab"
-version = "4.6.2"
+version = "4.6.3"
 source = { registry = "https://mirrors.aliyun.com/pypi/simple/" }
 dependencies = [
     { name = "async-lru" },
@@ -1221,9 +1221,9 @@ dependencies = [
     { name = "tornado" },
     { name = "traitlets" },
 ]
-sdist = { url = "https://mirrors.aliyun.com/pypi/packages/7a/7f/51c0c856ab286bdaf5709cf61ed13584ed9d4bee906479707da45b11b353/jupyterlab-4.6.2.tar.gz", hash = "sha256:e18ce8b34f3de350e93cd5b2c4f3ae884cbe266eb76bf5d6825a4ed34c13bcff" }
+sdist = { url = "https://mirrors.aliyun.com/pypi/packages/00/c0/45934229995d4c6e38192ca118d93185f60808f64157e3df3c5c28f8c5fd/jupyterlab-4.6.3.tar.gz", hash = "sha256:2e3db6e3a12495ebd188276e985bf5ac502fbde3d1e8628819920210008de498" }
 wheels = [
-    { url = "https://mirrors.aliyun.com/pypi/packages/63/1f/e39b248c76bb3736bc05a9491a6aa1315414c32dea12f548ecc1b24c758e/jupyterlab-4.6.2-py3-none-any.whl", hash = "sha256:5964447036629adfcd3fc0969effc1da6f47d2cbd0a60b2c2eea7c31be0ec6a8" },
+    { url = "https://mirrors.aliyun.com/pypi/packages/e9/47/242f46de028074651c9bd6d8000fc340ed0d3cdd1a0eae4387826123413a/jupyterlab-4.6.3-py3-none-any.whl", hash = "sha256:0a1ebc6567186f1eabd99536e94df7ed9e96d1e7c5ddf3e4406ae16e88abacb7" },
 ]
 
 [[package]]
@@ -1264,29 +1264,29 @@ wheels = [
 
 [[package]]
 name = "jupyterlite-core"
-version = "0.8.1"
+version = "0.8.3"
 source = { registry = "https://mirrors.aliyun.com/pypi/simple/" }
 dependencies = [
     { name = "doit" },
     { name = "jupyter-core" },
     { name = "pycparser", marker = "platform_python_implementation == 'PyPy'" },
 ]
-sdist = { url = "https://mirrors.aliyun.com/pypi/packages/53/b4/9d2eec0da17a0b4358240b4fd136643e3e02f05bc11b37cd280c6f865eac/jupyterlite_core-0.8.1.tar.gz", hash = "sha256:3265a3bc5bd49e433ecf90dde09ced38b841dc9eb0860bf1e7ef627033a92d3c" }
+sdist = { url = "https://mirrors.aliyun.com/pypi/packages/72/31/9b18a4cac1925ca9229c62a0a734554c91f8795b19dc6e2be18084334a56/jupyterlite_core-0.8.3.tar.gz", hash = "sha256:92735e2de4e1f67b411a218094d609b21350327d46454d89de84f113cd8440ae" }
 wheels = [
-    { url = "https://mirrors.aliyun.com/pypi/packages/33/00/99dc2f8e97baaa2670073dde4e33b6ed816b0e227a38f60c22e5d511c1ca/jupyterlite_core-0.8.1-py3-none-any.whl", hash = "sha256:6d0667324b41015135e6d2fa67db501c0101a08623ccd3c326b5ec6725816420" },
+    { url = "https://mirrors.aliyun.com/pypi/packages/c8/f1/c527ec3191c1d4f3019c4fdf08697adfdbb4054e31b0282b559cf15d4aa4/jupyterlite_core-0.8.3-py3-none-any.whl", hash = "sha256:f61b1dc434368794850dfeb9089e91bc86a2741dd6966e061edb028c8112c2e3" },
 ]
 
 [[package]]
 name = "jupyterlite-pyodide-kernel"
-version = "0.8.2"
+version = "0.8.5"
 source = { registry = "https://mirrors.aliyun.com/pypi/simple/" }
 dependencies = [
     { name = "jupyterlite-core" },
     { name = "pkginfo" },
 ]
-sdist = { url = "https://mirrors.aliyun.com/pypi/packages/06/d5/cecbbd02b4c37c2b5d4810101294440acfb5d310e0483e97c54d9a2eb6a6/jupyterlite_pyodide_kernel-0.8.2.tar.gz", hash = "sha256:2fdbe6ec5e024dac08f2bd1b5199e1c0fa770851a1895949586ae1c9d2e85636" }
+sdist = { url = "https://mirrors.aliyun.com/pypi/packages/e5/53/968cf7766ff1454ed3620d7fcddac9d954808e6fc94d575e9cdf3887b272/jupyterlite_pyodide_kernel-0.8.5.tar.gz", hash = "sha256:f9d5b411ae30c6be1be26994597a5b6f0cdf50bdd7bf303e2146bfd370a67ec7" }
 wheels = [
-    { url = "https://mirrors.aliyun.com/pypi/packages/da/41/20e1d2acc2b0e8d97767b0bef62b187a8766766bb85dadcfef918a35415c/jupyterlite_pyodide_kernel-0.8.2-py3-none-any.whl", hash = "sha256:ad22231458015e32500186197874d06d00874f7939df8986afd44739124b87e5" },
+    { url = "https://mirrors.aliyun.com/pypi/packages/7c/8a/bbb03f742128df53b0aff54026918dc6ae7477aa2007e59bca7764f90c68/jupyterlite_pyodide_kernel-0.8.5-py3-none-any.whl", hash = "sha256:97b31147143f27ffd6d1b7fa46da5ec723c457f4a616ebcd7fd33f84117e7474" },
 ]
 
 [[package]]
@@ -1553,7 +1553,7 @@ wheels = [
 
 [[package]]
 name = "notebook"
-version = "7.6.1"
+version = "7.6.2"
 source = { registry = "https://mirrors.aliyun.com/pypi/simple/" }
 dependencies = [
     { name = "jupyter-builder" },
@@ -1563,9 +1563,9 @@ dependencies = [
     { name = "notebook-shim" },
     { name = "tornado" },
 ]
-sdist = { url = "https://mirrors.aliyun.com/pypi/packages/28/62/34df9b5f6cef6a3e71301cd2f5525fe93a983ae46bd217e7cca27374a037/notebook-7.6.1.tar.gz", hash = "sha256:0b45fd1010668dd4808c40914d957706dbf044a677d28764dc881b74dfcede82" }
+sdist = { url = "https://mirrors.aliyun.com/pypi/packages/31/d9/5c76de84e96e1cf8aae3fce930875e0615e14f3557bbcdb634aab52da9d3/notebook-7.6.2.tar.gz", hash = "sha256:cc02b5f0bb972160cccfe44ad8a1a202036206ba3439469c514f03aefa9ae807" }
 wheels = [
-    { url = "https://mirrors.aliyun.com/pypi/packages/3c/19/003ac39eae3a88b80631f93eb954b61d0f1fc1dce4c84602eb0bf4802466/notebook-7.6.1-py3-none-any.whl", hash = "sha256:6ea1e4c926f0dc490444ddcc335797a3dacda470a805d01031872fb119988ba2" },
+    { url = "https://mirrors.aliyun.com/pypi/packages/5c/fd/3e552ff5b24dd305c6e9a10e8645e29c03091c317429f326ae10dbae1ac6/notebook-7.6.2-py3-none-any.whl", hash = "sha256:5fe9e09c335cb4b7de21627b860f77210e70e54b1fb1276ad942a4a7e1d858d3" },
 ]
 
 [[package]]
