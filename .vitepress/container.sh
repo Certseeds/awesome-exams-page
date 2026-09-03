@@ -16,6 +16,7 @@ main() {
         -e http_proxy="" \
         -e https_proxy="" \
         --name "${RUNTIME_NAME}" \
+        --network host \
         -v "${dotfiles}"/lang/hosts.conf:/etc/hosts \
         -v $(pwd):/home/${USERNAME}/repo/awesome-exams-page \
         -v awesome-exams-node-modules:/home/${USERNAME}/repo/awesome-exams-page/node_modules \
@@ -30,7 +31,5 @@ main() {
 
     # run pnpm setup
     # vim the claude code settings.json, to enable allow-dangerous tasks
-    # openclaw main using qwen3.5-plus
-    # cc using glm-5
 }
 main
