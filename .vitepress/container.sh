@@ -27,7 +27,10 @@ main() {
         -v awesome-exams-pnpm:/home/${USERNAME}/repo/awesome-exams-page/.pnpm-store \
         -v awesome-exams-claude:/home/${USERNAME}/.claude/ \
         "${SOURCE}/${GH_USERNAME}/${IMAGE_NAME}:latest"
-    podman cp "${dotfiles}"/lang/agents/cc.json "${RUNTIME_NAME}":/home/${USERNAME}/.claude/settings.json
+    podman cp ~/.claude/settings.json "${RUNTIME_NAME}":/home/${USERNAME}/.claude/settings.json
+    podman cp ~/.codex/cc-switch-model-catalog.json "${RUNTIME_NAME}":/home/${USERNAME}/.codex/cc-switch-model-catalog.json
+    podman cp ~/.codex/config.toml "${RUNTIME_NAME}":/home/${USERNAME}/.codex/config.toml
+
 
     # run pnpm setup
     # vim the claude code settings.json, to enable allow-dangerous tasks
